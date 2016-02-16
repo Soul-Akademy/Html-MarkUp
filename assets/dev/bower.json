@@ -1,0 +1,28 @@
+{
+  "name": "soulakademy",
+  "authors": [
+    "victorbustos <victor@creative-effect.com>"
+  ],
+  "description": "Frontend stuff for Soul Akademy",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Gulp",
+    "Less",
+    "Bootstrap"
+  ],
+  "license": "MIT",
+  "homepage": "victorbustos.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

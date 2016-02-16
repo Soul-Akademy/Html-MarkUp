@@ -1,15 +1,40 @@
+//////////////////////////////
+////// SM Screens
+//////////////////////////////
+@media only screen and (max-width: @screen-sm) {
+  #profile {
+    .cover {
+      height: 300px;
+    }
+    .user-nav {
+      margin-top: -120px;
+      .name {
+        font: 300 32px/38px 'Lato',sans-serif;
+        text-transform: uppercase;
+        color: @gray-base;
+      }
+      .location {
+        font: 300 18px/18px 'Lato',sans-serif;
+        color: @gray-base;
+      }
+    }
+  }  
+}
 
 
 //////////////////////////////
-////// Profile Page
+////// XS Screens
 //////////////////////////////
+
+////// PROFILE PAGE /////////
 @media only screen and (max-width: @screen-xs) {
   #profile {
     .cover {
-      height: 200px;
+      height: 180px;
     }
     .user-nav {
       margin-top: -80px;
+      img.pic {width: 60%;}
       .name {
         font: 300 32px/38px 'Lato',sans-serif;
         text-transform: uppercase;

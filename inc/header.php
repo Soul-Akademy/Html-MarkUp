@@ -18,11 +18,13 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="/">Soul Akademy</a>
+       <a class="navbar-brand" href="/">
+         <img src="/assets/img/soul-akademy-logo.svg" alt="">
+       </a>
      </div>
      <div id="navbar" class="navbar-collapse collapse">
        <ul class="nav navbar-nav">
-         <li class="active"><a href="#">My Locker Room</a></li>
+         <li><a href="#">My Locker Room</a></li>
          <li><a href="#friends">My Friends</a></li>
          <li><a href="#channels">My Channels</a></li>
          <li><a href="#atrium">Atrium</a></li>

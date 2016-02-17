@@ -1,11 +1,38 @@
+
+//////////////////////////////
+////// LG Screens
+//////////////////////////////
+@media only screen and (max-width: @screen-lg) {
+  .navbar-center {
+    margin-left: 00px;
+  }
+}
+
+//////////////////////////////
+////// MD Screens
+//////////////////////////////
+@media only screen and (max-width: @screen-md) {
+  .navbar-center {
+    li > a {padding-left: 10px; padding-right: 10px;}
+  }
+  #profile {
+    .cover {height: 420px;}
+    .user-nav {
+      .name {font: 500 28px/32px 'Lato',sans-serif;}
+      ul.profile-nav {
+        > li {margin: 0 10px; }
+      }
+    }
+  }
+}
+
 //////////////////////////////
 ////// SM Screens
 //////////////////////////////
 @media only screen and (max-width: @screen-sm) {
+  
   #profile {
-    .cover {
-      height: 300px;
-    }
+    .cover {height: 300px;}
     .user-nav {
       margin-top: -120px;
       .name {
@@ -16,6 +43,10 @@
       .location {
         font: 300 18px/18px 'Lato',sans-serif;
         color: @gray-base;
+      }
+      ul.profile-nav {
+        margin-top: 20px; text-align: center;
+        > li {margin: 0 10px; }
       }
     }
   }  
@@ -43,6 +74,9 @@
       .location {
         font: 300 18px/18px 'Lato',sans-serif;
         color: @gray-base;
+      }
+      ul.profile-nav {
+        > li {margin: 0 0px; }
       }
     }
   }  

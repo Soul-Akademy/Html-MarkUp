@@ -23,7 +23,7 @@
        </a>
      </div>
      <div id="navbar" class="navbar-collapse collapse">
-       <ul class="nav navbar-nav">
+       <ul class="nav navbar-nav navbar-center">
          <li><a href="#">My Locker Room</a></li>
          <li><a href="#friends">My Friends</a></li>
          <li><a href="#channels">My Channels</a></li>
@@ -31,7 +31,7 @@
        </ul>
        <ul class="nav navbar-nav navbar-right">
          <li class="dropdown">
-           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aldo Delgado <span class="caret"></span></a>
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Konrad G.<span class="caret"></span></a>
            <ul class="dropdown-menu">
              <li><a href="#">Action</a></li>
              <li><a href="#">Another action</a></li>

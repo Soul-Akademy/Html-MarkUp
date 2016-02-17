@@ -6,20 +6,22 @@
   
   <div class="container user-nav">
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="col-md-3 col-sm-3 col-xs-12">
         <img class="pic" src="/assets/img/profile/profile-pic.jpg" alt="">
       </div>
-      <div class="col-md-7 col-sm-6 col-xs-12">
+      <div class="col-md-6 col-sm-6 col-xs-6">
         <div class="name">Konrad Gungor</div>
         <div class="location">Miami, FL</div>
       </div>
-      <div class="col-md-2 col-sm-2">
-        <a class="add-friend-icon" href="#"> + </a>
-        <a class="add-friend-text" href="#">Add Friend</a>
+      <div class="col-md-3 col-sm-3 col-xs-6">
+        <div class="pull-right">
+          <a class="add-friend-icon" href="#"> + </a>
+          <a class="add-friend-text" href="#">Add Friend</a>
+        </div>
       </div>
       
-        <div class="col-md-9">
-          <ul class="nav">
+        <div class="col-md-9 col-sm-7 col-xs-12">
+          <ul class="profile-nav">
             <li><a href="#">Profile</a></li>
             <li><a href="#">Channel</a></li>
             <li><a href="#">About</a></li>
@@ -75,27 +77,48 @@
         
         <div class="panel">
           <div class="panel-heading">
-            <img class="img-circle" src="http://placehold.it/50x50" alt="">
+            <img class="img-circle" src="/assets/img/profile/profile-pic.jpg" width="50" height="50" alt="">
             <p><a href="#">Konrad Gungor</a> posted a photo</p>
             <span>5 mins ago</span>
           </div>
           <div class="panel-body no-pad">
-            <img class="img-responsive" src="http://placehold.it/550x300" alt="">
+            <img class="img-responsive" src="/assets/img/profile/post-img.jpg" alt="">
           </div>
           <div class="panel-footer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis.</p>
+            <span class="likes">10 Likes</span><a href="#">Like</a>
           </div>
         </div>
         
         <div class="panel">
           <div class="panel-heading">
-            <img class="img-circle" src="http://placehold.it/50x50" alt="">
-            <p><a href="#">Konrad Gungor</a> posted a photo</p>
+            <img class="img-circle" src="/assets/img/profile/profile-pic.jpg" width="50" height="50" alt="">
+            <p><a href="#">Konrad Gungor</a> udpated his status</p>
             <span>5 mins ago</span>
           </div>
           
           <div class="panel-footer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis.</p>
+            <span class="likes">10 Likes</span><a href="#">Like</a>
+          </div>
+        </div>
+        
+        <div class="panel">
+          <div class="panel-heading">
+            <img class="img-circle" src="/assets/img/profile/profile-pic.jpg" width="50" height="50" alt="">
+            <p><a href="#">Konrad Gungor</a> posted a video</p>
+            <span>5 mins ago</span>
+          </div>
+          <div class="panel-body no-pad">
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-u1DjsQz7l0"></iframe>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <h4>5 Minute Abs - Konrad Gungor</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis.</p>
+            <span class="likes">10 Likes</span><a href="#">Like</a>
           </div>
         </div>
         

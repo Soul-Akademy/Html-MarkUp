@@ -9,7 +9,7 @@
 
 @gray-base:              #272727;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray-dark:              #565656; // lighten(@gray-base, 20%); 
 @gray:                   #848484; 
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
@@ -337,7 +337,7 @@
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Small screen / tablet
-@container-tablet:             (800px + @grid-gutter-width);
+@container-tablet:             (760px + @grid-gutter-width);
 //** For `@screen-sm-min` and up.
 @container-sm:                 @container-tablet;
 
@@ -357,7 +357,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    70px;
+@navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -419,7 +419,7 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10px 30px;
+@nav-link-padding:                          10px 20px;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;

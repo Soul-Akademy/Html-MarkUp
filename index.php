@@ -1,33 +1,29 @@
 <?php include("inc/header.php"); ?>
 <div id="profile">
   <div style="" class="cover"></div>
-  <div style="height: 10px; width: 100%;" class="brand-gradient bar"></div>
-  
-  
+  <div style="height: 13px; width: 100%;" class="brand-gradient bar"></div>
+
   <div class="container user-nav">
-    <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-12">
-        <img class="pic" src="/assets/img/profile/profile-pic.jpg" alt="">
-      </div>
-      <div class="col-md-6 col-sm-6 col-xs-6">
-        <div class="name">Konrad Gungor</div>
-        <div class="location">Miami, FL</div>
-      </div>
-      <div class="col-md-3 col-sm-3 col-xs-6">
-        <div class="pull-right">
-          <a class="add-friend-icon" href="#"> + </a>
-          <a class="add-friend-text" href="#">Add Friend</a>
-        </div>
-      </div>
-      
-        <div class="col-md-9 col-sm-7 col-xs-12">
-          <ul class="profile-nav">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Channel</a></li>
-            <li><a href="#">About</a></li>
-          </ul>
-        </div>  
+    <div class="col-md-3 col-sm-3 col-xs-12">
+      <img class="pic" src="/assets/img/profile/profile-pic.jpg" alt="">
     </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <div class="name">Konrad Gungor</div>
+      <div class="location">Miami, FL</div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+      <div class="pull-right">
+        <a class="add-friend-icon" href="#"> + </a>
+        <a class="add-friend-text" href="#">Add Friend</a>
+      </div>
+    </div>
+    <div class="col-md-9 col-sm-7 col-xs-12">
+      <ul class="profile-nav">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Channel</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>  
   </div>
 
   <div class="feed-wrap">
@@ -44,10 +40,10 @@
       <div class="panel panel-default">
         <div class="panel-heading">Konrad’s Channel - 10 Videos</div>
         <div class="panel-body">
-          <img src="http://placehold.it/80x70" alt="">
-          <img src="http://placehold.it/80x70" alt="">
-          <img src="http://placehold.it/80x70" alt="">
-          <img src="http://placehold.it/80x70" alt="">
+          <img class="col-xs-3 nogutters" src="http://placehold.it/90x70" alt="">
+          <img class="col-xs-3 nogutters" src="http://placehold.it/90x70" alt="">
+          <img class="col-xs-3 nogutters" src="http://placehold.it/90x70" alt="">
+          <img class="col-xs-3 nogutters" src="http://placehold.it/90x70" alt="">
         </div>
         <div class="panel-footer"><a class="pull-right" href="#">See All ></a></div>
       </div>
@@ -56,7 +52,7 @@
         <div class="panel-heading">Advert</div>
         <div class="panel-body ad">
           <a href="#">
-            <img class="img-responsive" src="/assets/img/profile/ad.jpg" alt="">
+            <img src="/assets/img/profile/ad.jpg" alt="">
           </a>
         </div>
         <div class="panel-footer"></div>
@@ -125,10 +121,33 @@
       </div>
     </div>
     <div class="col-md-3">
-      <div class="panel">
+      <div class="panel panel-default">
         <div class="panel-heading">Milestones</div>
         <div class="panel-body">
-          <p>Blast Konrad's Locker Room.</p>
+          <ul class="milestones-wrap">
+          	<li>
+          		<div class="circle-marker active"></div>
+          		<div class="milestone">
+          			<h2>Aug 1</h2>
+          			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          		</div>
+          	</li>
+          	<li>
+          		<div class="circle-marker"></div>
+          		<div class="milestone">
+          			<h2>Jul 28</h2>
+          			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          		</div>
+          	</li>
+          	<li>
+          		<div class="circle-marker"></div>
+          		<div class="milestone">
+          			<h2>Jul 25</h2>
+          			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          		</div>
+          	</li>
+          </ul>
+          <a class="view-more" href="#">view more <span class="glyphicon glyphicon-menu-down"></span></a>
         </div>
       </div>
     </div>

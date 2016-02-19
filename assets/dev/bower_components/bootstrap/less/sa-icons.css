@@ -1,0 +1,45 @@
+/*
+  Icon Font: sa-icons
+*/
+
+@font-face {
+  font-family: "sa-icons";
+  src: url("../fonts/sa-icons.eot");
+  src: url("../fonts/sa-icons.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/sa-icons.woff") format("woff"),
+       url("../fonts/sa-icons.ttf") format("truetype"),
+       url("../fonts/sa-icons.svg#sa-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "sa-icons";
+    src: url("../fonts/sa-icons.svg#sa-icons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-certificate:before,
+.icon-personal-info:before,
+.icon-settings:before {
+  display: inline-block;
+  font-family: "sa-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-certificate:before { content: "\f104"; }
+.icon-personal-info:before { content: "\f102"; }
+.icon-settings:before { content: "\f101"; }

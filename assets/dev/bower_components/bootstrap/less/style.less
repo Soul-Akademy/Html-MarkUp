@@ -19,6 +19,17 @@
     left: -20px;
   }
 }
+.left-slash(@skew-angle; @leftpos; @toppos; @height; @thickness;) {
+  padding-left: @leftpos+30;
+  &:after {
+    content: '';
+    position: absolute; display: block; 
+    left: @leftpos; top: @toppos;
+    height: @height; width: 0;
+    border-right: @thickness solid @brand-primary;
+    -moz-transform: skew(@skew-angle); -webkit-transform: skew(@skew-angle); transform: skew(@skew-angle);
+  }
+}
 
 //////////////////////////////
 ////// Global Styles
@@ -133,7 +144,9 @@ footer {
     padding: 20px 30px;
     .dropshadow();
     h1 {
-      .h2();
+      .h2(); position: relative;
+      .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */;);
+      margin-bottom: 36px;
       color: @gray-base;
       text-transform: uppercase;
       span.acct-type {color: @gray-light; text-transform: capitalize;}
@@ -149,6 +162,7 @@ footer {
       input.form-control , select.form-control { margin-bottom: 30px;}
     }
   }
+  p.note {.left-gap-xl();}
   a.save {
     .btn-primary(); .btn-lg(); .pull-right(); margin-top: 20px;
     padding: 0; border:0; line-height: 40px;display:inline-block;

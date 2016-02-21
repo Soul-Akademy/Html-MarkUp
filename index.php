@@ -165,9 +165,9 @@
         <div class="clearfix"></div>
         
         <h2><span class="icon icon-certificate"></span>Credential Information</h2>
-        <p>Note: We manually verify all our professionals ( takes 2-3 days )</p>
+        <p class="note">Note: We manually verify all our professionals ( takes 2-3 days )</p>
         
-        <div class="form-group">
+        <div class="form-group top-gap-lg">
           <div class="col-md-6">
             <label>License / Certification Number</label>
             <input type="text" class="form-control" name="first_name" placeholder="">            

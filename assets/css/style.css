@@ -2236,6 +2236,100 @@ pre code {
     margin-left: 0%;
   }
 }
+.top-gap-xs {
+  margin-top: 6px;
+}
+.right-gap-xs {
+  margin-right: 6px;
+}
+.bottom-gap-xs {
+  margin-bottom: 6px;
+}
+.left-gap-xs {
+  margin-left: 6px;
+}
+.top-gap-sm {
+  margin-top: 10px;
+}
+.right-gap-sm {
+  margin-right: 10px;
+}
+.bottom-gap-sm {
+  margin-bottom: 10px;
+}
+.left-gap-sm {
+  margin-left: 10px;
+}
+.top-gap {
+  margin-top: 15px;
+}
+.right-gap {
+  margin-right: 15px;
+}
+.bottom-gap {
+  margin-bottom: 15px;
+}
+.left-gap {
+  margin-left: 15px;
+}
+.top-gap-lg {
+  margin-top: 30px;
+}
+.right-gap-lg {
+  margin-right: 30px;
+}
+.bottom-gap-lg {
+  margin-bottom: 30px;
+}
+.left-gap-lg {
+  margin-left: 30px;
+}
+.top-gap-xl {
+  margin-top: 60px;
+}
+.right-gap-xl {
+  margin-right: 60px;
+}
+.bottom-gap-xl {
+  margin-bottom: 60px;
+}
+.left-gap-xl {
+  margin-left: 60px;
+}
+.top-gap-xxl {
+  margin-top: 90px;
+}
+.right-gap-xxl {
+  margin-right: 90px;
+}
+.bottom-gap-xxl {
+  margin-bottom: 90px;
+}
+.left-gap-xxl {
+  margin-left: 90px;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.no-gutter-right {
+  padding-right: 0;
+  margin-right: 0;
+}
+.no-gutter-left {
+  padding-left: 0;
+  margin-left: 0;
+}
+.no-gap-top {
+  margin-top: 0;
+  padding-top: 0;
+}
+.no-gap-bottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 table {
   background-color: transparent;
 }
@@ -6983,6 +7077,9 @@ footer {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 30px;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 36px;
   color: #272727;
   text-transform: uppercase;
 }
@@ -6995,6 +7092,19 @@ footer {
 #create-profile .pro-form h1 small,
 #create-profile .pro-form h1 .small {
   font-size: 65%;
+}
+#create-profile .pro-form h1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 20px;
+  top: 4px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #ff7c34;
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  transform: skew(30deg);
 }
 #create-profile .pro-form h1 span.acct-type {
   color: #9e9e9e;
@@ -7037,6 +7147,9 @@ footer {
 #create-profile .pro-form form input.form-control,
 #create-profile .pro-form form select.form-control {
   margin-bottom: 30px;
+}
+#create-profile p.note {
+  margin-left: 60px;
 }
 #create-profile a.save {
   color: #fff;

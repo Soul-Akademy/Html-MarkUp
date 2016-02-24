@@ -19,14 +19,14 @@
     left: -20px;
   }
 }
-.left-slash(@skew-angle; @leftpos; @toppos; @height; @thickness;) {
+.left-slash(@skew-angle; @leftpos; @toppos; @height; @thickness; @slashcolor;) {
   padding-left: @leftpos+30;
   &:after {
     content: '';
     position: absolute; display: block; 
     left: @leftpos; top: @toppos;
     height: @height; width: 0;
-    border-right: @thickness solid @brand-primary;
+    border-right: @thickness solid @slashcolor;
     -moz-transform: skew(@skew-angle); -webkit-transform: skew(@skew-angle); transform: skew(@skew-angle);
   }
 }
@@ -119,7 +119,131 @@ footer {
 //////////////////////////////
 ////// Atrium Page
 //////////////////////////////
-
+#atrium {
+  .cover {
+    height: 200px;
+    background: #3c3c3c;
+    background: -moz-linear-gradient(top,  #3c3c3c 40%, #080808 100%);
+    background: -webkit-linear-gradient(top,  #3c3c3c 40%,#080808 100%);
+    background: linear-gradient(to bottom,  #3c3c3c 40%,#080808 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', endColorstr='#080808',GradientType=0 );
+    .container {
+      position: relative; height: 200px;
+      img.atrium-logo {position: absolute; bottom: -1px; left:0;}  
+    }
+  }
+  .option-panels {
+    .dropshadow();
+    position: relative; overflow: hidden;
+    margin: 15px 0 70px 0;
+    &:nth-child(1) {margin-top: 100px;}
+    .icon , .text , .go {float: left;}
+    .icon {
+      background: url('/assets/img/atrium-icons.png') left 0;
+      width: 126px; height: 118px;
+      margin: 15px 15px 15px 40px;
+      &.pro {height:109px; background-position: 0 -118px;}
+      &.channels {height:108px; background-position: 0 -227px;}
+      &.review {height: 98px; background-position: 0 -335px;}
+    }
+    .text {
+      width: 60%; margin-right: 30px; padding-left: 15px;
+      h2 {
+        position: relative;
+        .h3(); text-transform: uppercase;
+        &.orange {
+          .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-primary;);
+        }
+        &.blue {
+          .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-info;);
+        }
+        &.green {
+          .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-success;);
+        }
+        &.gray {
+          .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @gray;);
+        }
+      }
+      p {font: 300 18px/1.4em 'Lato',sans-serif;}
+    }
+    
+    .create-pane {
+      .angled(@brand-primary; 18%; 160px; 160px; );
+      //.angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
+      &:before {
+        border-left: 120px solid transparent;
+        left: -120px
+      }
+      right:0; top: 0; position: absolute; z-index: 1;
+      div {
+        position: absolute; top: 40%; left: 40%;
+        font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
+        text-transform: uppercase;
+      }
+      /////// animate width ///// 
+      -webkit-transition: width 0.4s ease-in-out;
+      -moz-transition: width 0.4s ease-in-out;
+      -o-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+      
+      &.expanded {width: 78%;}
+    }
+    .findpro-pane {
+      .angled(@brand-info; 18%; 160px; 160px; );
+      &:before {
+        border-left: 120px solid transparent;
+        left: -120px
+      }
+      right:0; top: 0; position: absolute; z-index: 1;
+      div {
+        position: absolute; top: 40%; left: 40%;
+        font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
+        text-transform: uppercase;
+      }
+      /////// animate width ///// 
+      -webkit-transition: width 0.4s ease-in-out;
+      -moz-transition: width 0.4s ease-in-out;
+      -o-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    .channel-pane {
+      .angled(@brand-success; 18%; 160px; 160px; );
+      &:before {
+        border-left: 120px solid transparent;
+        left: -120px
+      }
+      right:0; top: 0; position: absolute; z-index: 1;
+      div {
+        position: absolute; top: 40%; left: 40%;
+        font: 100 1.2em/1.5em 'Lato', sans-serif; color: #fff;
+        text-transform: uppercase;
+      }
+      /////// animate width ///// 
+      -webkit-transition: width 0.4s ease-in-out;
+      -moz-transition: width 0.4s ease-in-out;
+      -o-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+    .review-pane {
+      .angled(@gray; 18%; 160px; 160px; );
+      &:before {
+        border-left: 120px solid transparent;
+        left: -120px
+      }
+      right:0; top: 0; position: absolute; z-index: 1;
+      div {
+        position: absolute; top: 40%; left: 40%;
+        font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
+        text-transform: uppercase;
+      }
+      /////// animate width ///// 
+      -webkit-transition: width 0.4s ease-in-out;
+      -moz-transition: width 0.4s ease-in-out;
+      -o-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+  }
+} // #atrium
 
 
 //////////////////////////////
@@ -145,7 +269,7 @@ footer {
     .dropshadow();
     h1 {
       .h2(); position: relative;
-      .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */;);
+      .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-primary;);
       margin-bottom: 36px;
       color: @gray-base;
       text-transform: uppercase;

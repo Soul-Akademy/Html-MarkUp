@@ -1086,12 +1086,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #ff7c34;
+  color: #2583b0;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #e65200;
+  color: #185471;
   text-decoration: underline;
 }
 a:focus {
@@ -3482,7 +3482,7 @@ fieldset[disabled] .btn-danger.focus {
   background-color: #fff;
 }
 .btn-link {
-  color: #ff7c34;
+  color: #2583b0;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3503,7 +3503,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #e65200;
+  color: #185471;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3589,7 +3589,7 @@ tbody.collapse.in {
   border-top: 8px solid \9;
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
-  color: #ffb72b;
+  color: #ff7c34;
 }
 .dropup,
 .dropdown {
@@ -4085,7 +4085,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #ebebeb;
-  border-color: #ff7c34;
+  border-color: #2583b0;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4801,7 +4801,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #ff7c34;
+  color: #2583b0;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4822,7 +4822,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #e65200;
+  color: #185471;
   background-color: #ebebeb;
   border-color: #ddd;
 }
@@ -5060,7 +5060,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #ff7c34;
+  color: #2583b0;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -5135,7 +5135,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #ff7c34;
+  border-color: #2583b0;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -7045,6 +7045,299 @@ footer {
 }
 .dropshadow {
   box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
+}
+#atrium .cover {
+  height: 200px;
+  background: #3c3c3c;
+  background: -moz-linear-gradient(top, #3c3c3c 40%, #080808 100%);
+  background: -webkit-linear-gradient(top, #3c3c3c 40%, #080808 100%);
+  background: linear-gradient(to bottom, #3c3c3c 40%, #080808 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c3c3c', endColorstr='#080808', GradientType=0);
+}
+#atrium .cover .container {
+  position: relative;
+  height: 200px;
+}
+#atrium .cover .container img.atrium-logo {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+#atrium .option-panels {
+  box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
+  position: relative;
+  overflow: hidden;
+  margin: 15px 0 70px 0;
+}
+#atrium .option-panels:nth-child(1) {
+  margin-top: 100px;
+}
+#atrium .option-panels .icon,
+#atrium .option-panels .text,
+#atrium .option-panels .go {
+  float: left;
+}
+#atrium .option-panels .icon {
+  background: url('/assets/img/atrium-icons.png') left 0;
+  width: 126px;
+  height: 118px;
+  margin: 15px 15px 15px 40px;
+}
+#atrium .option-panels .icon.pro {
+  height: 109px;
+  background-position: 0 -118px;
+}
+#atrium .option-panels .icon.channels {
+  height: 108px;
+  background-position: 0 -227px;
+}
+#atrium .option-panels .icon.review {
+  height: 98px;
+  background-position: 0 -335px;
+}
+#atrium .option-panels .text {
+  width: 60%;
+  margin-right: 30px;
+  padding-left: 15px;
+}
+#atrium .option-panels .text h2 {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#atrium .option-panels .text h2 small,
+#atrium .option-panels .text h2 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #9e9e9e;
+}
+#atrium .option-panels .text h2 small,
+#atrium .option-panels .text h2 .small {
+  font-size: 65%;
+}
+#atrium .option-panels .text h2.orange {
+  padding-left: 50px;
+}
+#atrium .option-panels .text h2.orange:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 20px;
+  top: 4px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #ff7c34;
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  transform: skew(30deg);
+}
+#atrium .option-panels .text h2.blue {
+  padding-left: 50px;
+}
+#atrium .option-panels .text h2.blue:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 20px;
+  top: 4px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #28b8fe;
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  transform: skew(30deg);
+}
+#atrium .option-panels .text h2.green {
+  padding-left: 50px;
+}
+#atrium .option-panels .text h2.green:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 20px;
+  top: 4px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #8de63c;
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  transform: skew(30deg);
+}
+#atrium .option-panels .text h2.gray {
+  padding-left: 50px;
+}
+#atrium .option-panels .text h2.gray:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 20px;
+  top: 4px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #848484;
+  -moz-transform: skew(30deg);
+  -webkit-transform: skew(30deg);
+  transform: skew(30deg);
+}
+#atrium .option-panels .text p {
+  font: 300 18px/1.4em 'Lato', sans-serif;
+}
+#atrium .option-panels .create-pane {
+  position: relative;
+  background-color: #ff7c34;
+  width: 18%;
+  height: 160px;
+  padding-left: 10px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#atrium .option-panels .create-pane:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 160px solid #ff7c34;
+  border-left: 20px solid transparent;
+  left: -20px;
+}
+#atrium .option-panels .create-pane:before {
+  border-left: 120px solid transparent;
+  left: -120px;
+}
+#atrium .option-panels .create-pane div {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font: normal 1.5em/1.5em 'Lato', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+#atrium .option-panels .create-pane.expanded {
+  width: 78%;
+}
+#atrium .option-panels .findpro-pane {
+  position: relative;
+  background-color: #28b8fe;
+  width: 18%;
+  height: 160px;
+  padding-left: 10px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#atrium .option-panels .findpro-pane:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 160px solid #28b8fe;
+  border-left: 20px solid transparent;
+  left: -20px;
+}
+#atrium .option-panels .findpro-pane:before {
+  border-left: 120px solid transparent;
+  left: -120px;
+}
+#atrium .option-panels .findpro-pane div {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font: normal 1.5em/1.5em 'Lato', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+#atrium .option-panels .channel-pane {
+  position: relative;
+  background-color: #8de63c;
+  width: 18%;
+  height: 160px;
+  padding-left: 10px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#atrium .option-panels .channel-pane:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 160px solid #8de63c;
+  border-left: 20px solid transparent;
+  left: -20px;
+}
+#atrium .option-panels .channel-pane:before {
+  border-left: 120px solid transparent;
+  left: -120px;
+}
+#atrium .option-panels .channel-pane div {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font: 100 1.2em/1.5em 'Lato', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+#atrium .option-panels .review-pane {
+  position: relative;
+  background-color: #848484;
+  width: 18%;
+  height: 160px;
+  padding-left: 10px;
+  right: 0;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: width 0.4s ease-in-out;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+#atrium .option-panels .review-pane:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 160px solid #848484;
+  border-left: 20px solid transparent;
+  left: -20px;
+}
+#atrium .option-panels .review-pane:before {
+  border-left: 120px solid transparent;
+  left: -120px;
+}
+#atrium .option-panels .review-pane div {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  font: normal 1.5em/1.5em 'Lato', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
 }
 #create-profile .cover {
   height: 200px;

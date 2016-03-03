@@ -57,33 +57,33 @@
 .selectwrap {
   position:relative;
   select.form-control {
-      background: #fff;
-      color:#888;
-      display: inline-block;
-      outline:none; 
-      -webkit-appearance:none;
-      -moz-appearance:none;
-      appearance:none;
-      cursor:pointer;
+    background: #fff;
+    color:#888;
+    display: inline-block;
+    outline:none; 
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
   }
   &:after {
-      content:'';
-      color:#fff; font:11px "Consolas", monospace;
-      background: url('/assets/img/select-arrow.png');
-      right:0px; top:0;
-      padding:0; height: 50px; width: 74px;
-      border:0;
-      position:absolute;
-      pointer-events:none;
+    content:'';
+    color:#fff; font:11px "Consolas", monospace;
+    background: url('/assets/select-arrow.png');
+    right:0px; top:0;
+    padding:0; height: 50px; width: 74px;
+    border:0;
+    position:absolute;
+    pointer-events:none;
   }
   &:before {
-      content:'';
-      right:6px; top:0px;
-      width:20px; height:20px;
-      background:#f8f8f8;
-      position:absolute;
-      pointer-events:none;
-      display:block;
+    content:'';
+    right:6px; top:0px;
+    width:20px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
   }
 } // .selectwrap
 
@@ -139,7 +139,7 @@ footer {
     &:nth-child(1) {margin-top: 100px;}
     .icon , .text , .go {float: left;}
     .icon {
-      background: url('/assets/img/atrium-icons.png') left 0;
+      background: url('/assets/atrium-icons.png') left 0;
       width: 126px; height: 118px;
       margin: 15px 15px 15px 40px;
       &.pro {height:109px; background-position: 0 -118px;}
@@ -166,7 +166,7 @@ footer {
       }
       p {font: 300 18px/1.4em 'Lato',sans-serif;}
     }
-    
+
     .create-pane {
       .angled(@brand-primary; 18%; 160px; 160px; );
       //.angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
@@ -185,7 +185,7 @@ footer {
       -moz-transition: width 0.4s ease-in-out;
       -o-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out;
-      
+
       &.expanded {width: 78%;}
     }
     .findpro-pane {
@@ -303,9 +303,9 @@ footer {
     // margin-top: @navbar-height;
     height: 405px;
     width: 100%;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/profile/cover.jpg') no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/profile/cover.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/profile/cover.jpg') no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -335,8 +335,8 @@ footer {
       text-transform: uppercase;
     }
     .location {font: 300 18px/18px 'Lato',sans-serif;}
-  
-    
+
+
     a.add-friend-icon , a.add-friend-text {display:inline-block; float: left; line-height: 30px;}
     a.add-friend-icon {
       color: #fff;
@@ -353,8 +353,8 @@ footer {
         &:before {border-top-color:@brand-primary;}
       }
     } // a.add-friend-text
-    
-    
+
+
     ul.profile-nav {
       margin-top: 110px;
       .list-inline();
@@ -371,7 +371,7 @@ footer {
   .feed-wrap {
     margin-top: 20px;
     .container();
-    
+
     .panel {
       margin-bottom: 30px;
       .no-pad {padding-left:0; padding-right: 0;}
@@ -400,7 +400,7 @@ footer {
       .panel-footer {overflow:hidden;}
     }
     //////////
-  
+
     .panel-special {
       margin-bottom: 30px; border:none;
       .panel-heading {
@@ -424,7 +424,7 @@ footer {
       .panel-footer {overflow:hidden;}
     } // .panel-special
 
-    
+
     //////////////////////////
 
     ul.milestones-wrap {
@@ -457,16 +457,16 @@ footer {
           }
           /* The triangle */
           // &:after {
-          //   right: 100%;
-          //   border: solid transparent;
-          //   content: " ";
-          //   height: 0;
-          //   width: 0;
-          //   position: absolute;
-          //   pointer-events: none;
-          //   border-right-color: #3594cb;
-          //   border-width: 10px;
-          //   top: 10px;
+            //   right: 100%;
+            //   border: solid transparent;
+            //   content: " ";
+            //   height: 0;
+            //   width: 0;
+            //   position: absolute;
+            //   pointer-events: none;
+            //   border-right-color: #3594cb;
+            //   border-width: 10px;
+            //   top: 10px;
           // }
         }
         /* The icons */
@@ -486,7 +486,7 @@ footer {
     //////////////////////////
 
   } // .feed-wrap
-  
+
 }
 
 @import "media-queries.less";

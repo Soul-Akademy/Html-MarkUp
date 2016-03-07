@@ -1,5 +1,5 @@
 /*!
- * jQuery JavaScript Library v@VERSION
+ * jQuery JavaScript Library VERSION
  * http://jquery.com/
  *
  * Includes Sizzle.js
@@ -25,20 +25,21 @@
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
-				if ( !w.document ) {
-					throw new Error( "jQuery requires a window with a document" );
-				}
-				return factory( w );
-			};
+			if ( !w.document ) {
+				throw new Error( "jQuery requires a window with a document" );
+			}
+			return factory( w );
+		};
 	} else {
 		factory( global );
 	}
 
-// Pass this if window is not defined yet
+	// Pass this if window is not defined yet
 }(typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
 
-// Support: Firefox 18+
-// Can't be in strict mode, several libs including ASP.NET trace
-// the stack via arguments.caller.callee and Firefox dies if
-// you try to trace through "use strict" call chains. (#13335)
-//"use strict";
+	// Support: Firefox 18+
+	// Can't be in strict mode, several libs including ASP.NET trace
+	// the stack via arguments.caller.callee and Firefox dies if
+	// you try to trace through "use strict" call chains. (#13335)
+	//"use strict";
+});

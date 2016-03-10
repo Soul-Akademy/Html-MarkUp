@@ -6864,11 +6864,11 @@ button.close {
 
 @font-face {
   font-family: "sa-icons";
-  src: url("../fonts/sa-icons.eot");
-  src: url("../fonts/sa-icons.eot?#iefix") format("embedded-opentype"),
-       url("../fonts/sa-icons.woff") format("woff"),
-       url("../fonts/sa-icons.ttf") format("truetype"),
-       url("../fonts/sa-icons.svg#sa-icons") format("svg");
+  src: url("/assets/sa-icons.eot");
+  src: url("/assets/sa-icons.eot?#iefix") format("embedded-opentype"),
+       url("/assets/sa-icons.woff") format("woff"),
+       url("/assets/sa-icons.ttf") format("truetype"),
+       url("/assets/sa-icons.svg#sa-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -6876,7 +6876,7 @@ button.close {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "sa-icons";
-    src: url("../fonts/sa-icons.svg#sa-icons") format("svg");
+    src: url("/assets/sa-icons.svg#sa-icons") format("svg");
   }
 }
 
@@ -7010,7 +7010,7 @@ button.close {
   content: '';
   color: #fff;
   font: 11px "Consolas", monospace;
-  background: url('/assets/img/select-arrow.png');
+  background: url('/assets/select-arrow.png');
   right: 0px;
   top: 0;
   padding: 0;
@@ -7085,7 +7085,7 @@ footer {
   float: left;
 }
 #atrium .option-panels .icon {
-  background: url('/assets/img/atrium-icons.png') left 0;
+  background: url('/assets/atrium-icons.png') left 0;
   width: 126px;
   height: 118px;
   margin: 15px 15px 15px 40px;
@@ -7558,9 +7558,9 @@ fieldset[disabled] #create-profile a.save.focus {
 #profile .cover {
   height: 405px;
   width: 100%;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/profile/cover.jpg') no-repeat;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/profile/cover.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/profile/cover.jpg') no-repeat;
   background-position: center;
   background-size: cover;
 }

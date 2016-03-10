@@ -39,7 +39,8 @@ gulp.task('js', function(){
   return gulp.src([
       paths.dev.vendor+'jquery/dist/jquery.js',
       paths.dev.vendor+'bootstrap/dist/js/bootstrap.js',
-      paths.dev.js+'scripts.js'
+      paths.dev.js+'scripts.js',
+      paths.dev.js+'show-password.js'
     ])
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())

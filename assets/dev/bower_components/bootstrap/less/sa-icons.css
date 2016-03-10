@@ -24,7 +24,10 @@
 
 [data-icon]:before,
 .icon-certificate:before,
+.icon-email:before,
+.icon-lock:before,
 .icon-personal-info:before,
+.icon-send:before,
 .icon-settings:before {
   display: inline-block;
   font-family: "sa-icons";
@@ -41,5 +44,8 @@
 }
 
 .icon-certificate:before { content: "\f104"; }
+.icon-email:before { content: "\f105"; }
+.icon-lock:before { content: "\f106"; }
 .icon-personal-info:before { content: "\f102"; }
+.icon-send:before { content: "\f107"; }
 .icon-settings:before { content: "\f101"; }

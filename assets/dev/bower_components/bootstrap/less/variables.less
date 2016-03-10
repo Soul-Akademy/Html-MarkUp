@@ -9,14 +9,14 @@
 
 @gray-base:              #272727;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              #565656; // lighten(@gray-base, 20%); 
-@gray:                   #848484; 
+@gray-dark:              #565656; // lighten(@gray-base, 20%);
+@gray:                   #848484;
 @gray-light:             lighten(@gray-base, 46.7%);
 @gray-lighter:           #ebebeb; // lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary:         #ff7c34; // #337ab7
 @brand-success:         #8de63c;
-@brand-info:            #28b8fe;
+@brand-info:            #208cc0;
 @brand-warning:         #ffb72b;
 @brand-danger:          #d9534f;
 
@@ -31,7 +31,7 @@
 @text-color:            @gray-dark;
 
 //** Global textual link color.
-@link-color:            #2583b0;
+@link-color:            @brand-info;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
@@ -395,8 +395,8 @@
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 lighten(@gray-light, 15%);
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-color:                 #fff; // lighten(@gray-light, 15%);
+@navbar-inverse-link-hover-color:           lighten(@gray-light, 15%);
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             lighten(@navbar-inverse-bg, 40%);

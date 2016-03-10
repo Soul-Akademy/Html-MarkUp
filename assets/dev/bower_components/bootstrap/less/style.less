@@ -17,13 +17,15 @@
     //border-top: 40px solid #ff7b35;
     border-left: 20px solid transparent;
     left: -20px;
+    top:0;
   }
 }
+
 .left-slash(@skew-angle; @leftpos; @toppos; @height; @thickness; @slashcolor;) {
   padding-left: @leftpos+30;
   &:after {
     content: '';
-    position: absolute; display: block; 
+    position: absolute; display: block;
     left: @leftpos; top: @toppos;
     height: @height; width: 0;
     border-right: @thickness solid @slashcolor;
@@ -41,14 +43,14 @@
 .angled-deco-orange {
   margin: -10px -15px;
   .glyphicon {color: white;position: absolute; right: 10px; top: 15px;}
-  .angled(@brand-primary; 120px; 41px; 40px;);  
+  .angled(@brand-primary; 120px; 41px; 40px;);
   .pull-right();
 }
 
 .angled-deco-green {
   margin: -10px -15px;
   .glyphicon {color: white;position: absolute; right: 10px; top: 15px;}
-  .angled(@brand-success; 120px; 41px; 40px;);  
+  .angled(@brand-success; 120px; 41px; 40px;);
   .pull-right();
   &.sm {.angled(@brand-success; 40px; 41px; 40px;);  }
 }
@@ -60,7 +62,7 @@
       background: #fff;
       color:#888;
       display: inline-block;
-      outline:none; 
+      outline:none;
       -webkit-appearance:none;
       -moz-appearance:none;
       appearance:none;
@@ -129,7 +131,7 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', endColorstr='#080808',GradientType=0 );
     .container {
       position: relative; height: 200px;
-      img.atrium-logo {position: absolute; bottom: -1px; left:0;}  
+      img.atrium-logo {position: absolute; bottom: -1px; left:0;}
     }
   }
   .option-panels {
@@ -166,7 +168,7 @@ footer {
       }
       p {font: 300 18px/1.4em 'Lato',sans-serif;}
     }
-    
+
     .create-pane {
       .angled(@brand-primary; 18%; 160px; 160px; );
       //.angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
@@ -180,12 +182,12 @@ footer {
         font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
-      /////// animate width ///// 
+      /////// animate width /////
       -webkit-transition: width 0.4s ease-in-out;
       -moz-transition: width 0.4s ease-in-out;
       -o-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out;
-      
+
       &.expanded {width: 78%;}
     }
     .findpro-pane {
@@ -200,7 +202,7 @@ footer {
         font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
-      /////// animate width ///// 
+      /////// animate width /////
       -webkit-transition: width 0.4s ease-in-out;
       -moz-transition: width 0.4s ease-in-out;
       -o-transition: width 0.4s ease-in-out;
@@ -218,7 +220,7 @@ footer {
         font: 100 1.2em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
-      /////// animate width ///// 
+      /////// animate width /////
       -webkit-transition: width 0.4s ease-in-out;
       -moz-transition: width 0.4s ease-in-out;
       -o-transition: width 0.4s ease-in-out;
@@ -236,7 +238,7 @@ footer {
         font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
-      /////// animate width ///// 
+      /////// animate width /////
       -webkit-transition: width 0.4s ease-in-out;
       -moz-transition: width 0.4s ease-in-out;
       -o-transition: width 0.4s ease-in-out;
@@ -260,7 +262,7 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c3c3c', endColorstr='#080808',GradientType=0 );
     .container {
       position: relative; height: 200px;
-      img.atrium-logo {position: absolute; bottom: -1px; left:0;}  
+      img.atrium-logo {position: absolute; bottom: -1px; left:0;}
     }
   }
   .pro-form {
@@ -335,8 +337,8 @@ footer {
       text-transform: uppercase;
     }
     .location {font: 300 18px/18px 'Lato',sans-serif;}
-  
-    
+
+
     a.add-friend-icon , a.add-friend-text {display:inline-block; float: left; line-height: 30px;}
     a.add-friend-icon {
       color: #fff;
@@ -353,8 +355,8 @@ footer {
         &:before {border-top-color:@brand-primary;}
       }
     } // a.add-friend-text
-    
-    
+
+
     ul.profile-nav {
       margin-top: 110px;
       .list-inline();
@@ -371,7 +373,7 @@ footer {
   .feed-wrap {
     margin-top: 20px;
     .container();
-    
+
     .panel {
       margin-bottom: 30px;
       .no-pad {padding-left:0; padding-right: 0;}
@@ -380,7 +382,7 @@ footer {
         p {margin-bottom: 0; color: @gray;}
         span {font-size: 12px;}
       }
-      .panel-body { 
+      .panel-body {
         a.view-more {margin-top: 30px; display:block; width: 100%; text-align:center;}
       }
       .panel-footer {
@@ -400,7 +402,7 @@ footer {
       .panel-footer {overflow:hidden;}
     }
     //////////
-  
+
     .panel-special {
       margin-bottom: 30px; border:none;
       .panel-heading {
@@ -410,7 +412,7 @@ footer {
         padding-left: 32px;
         &:after {
           content: '';
-          position: absolute; display: block; 
+          position: absolute; display: block;
           left: 32px; top: 8px;
           height: 22px; width: 0;
           border-right: 2px solid @brand-primary;
@@ -424,7 +426,7 @@ footer {
       .panel-footer {overflow:hidden;}
     } // .panel-special
 
-    
+
     //////////////////////////
 
     ul.milestones-wrap {
@@ -471,7 +473,7 @@ footer {
         }
         /* The icons */
         .circle-marker {
-          width: 18px; height: 18px;	
+          width: 18px; height: 18px;
           speak: none;
           position: absolute;
           background: #fff;
@@ -486,7 +488,64 @@ footer {
     //////////////////////////
 
   } // .feed-wrap
-  
+
 }
+//////////////////////////////
+////// Login
+//////////////////////////////
+body.login {
+  .navbar li.orange{background: @brand-primary;}
+  background: #f8f8f8 url('/assets/img/login-bkd.jpg') 92% 100% no-repeat;
+  background-attachment: fixed;
+  #login {
+
+    padding-top:100px;
+
+    .panel-login {
+      margin-bottom: 30px; border:none;
+      .panel-heading {
+        color: #fff;
+        text-transform:uppercase;
+        background: @gray;
+        padding-left: 32px;
+        &:after {
+          content: '';
+          position: absolute; display: block;
+          left: 32px; top: 8px;
+          height: 22px; width: 0;
+          border-right: 2px solid @brand-primary;
+          -moz-transform: skew(20deg); -webkit-transform: skew(20deg); transform: skew(20deg);
+        }
+      }
+      .panel-body {
+        padding: 30px 40px;
+        .form-group {
+          margin: 20px 0;
+          input {font-family: 'sa-icons';}
+          .input-append input.toggle-pass {border-right: none;}
+          .input-group-addon {background: #fff; border-left: none;}
+          a.forgot-pass {display:block; padding: 20px 0 30px 0; .pull-right(); clear:both;}
+        }
+        a.btn-primary {
+          .pull-right(); clear:both; border:0;
+          text-transform: uppercase;
+          margin: 0 -15px;
+          .angled(@brand-primary; 120px; 41px; 40px; );
+          &:hover {
+            background: @brand-success;
+            color: @gray-darker;
+            box-shadow: 2px 2px 2px #999;
+            .angled(@brand-success; 120px; 41px; 40px; );
+          }
+        }
+
+      }
+
+    } // .panel-login
+    .not-member {color:@gray; width: 80%; margin: 0 auto; text-align: center;}
+  }
+} // body.login
+
+
 
 @import "media-queries.less";

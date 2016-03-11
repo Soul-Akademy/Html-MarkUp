@@ -112,4 +112,31 @@
       }
     }
   }  
+  
+  //////////////////////////////
+  ////// Login
+  //////////////////////////////
+  body.login {
+    #login {
+      padding-top:50px;
+      .panel-body {
+        padding: 20px;        
+        // CHOOSE ACCTOUNT TYPE
+        a.account-type {
+          display:block;
+          text-transform: uppercase;
+          padding: 28px 20px; overflow: hidden;
+          font: 300 1.2em/1em 'Lato',sans-serif;
+          margin-top: 20px;
+          background: @gray-darker url('/assets/img/enthusiast.png')  70% 100% no-repeat;
+          div {
+            padding: 0px;
+            &:nth-child(2) {padding: 0 2px!important;}
+          }
+          &.pro {background: @gray url('/assets/img/pro.png')  70% 10px no-repeat;}
+        }
+      } // .panel-body
+
+    } // .panel-login
+  } // body.login
 }

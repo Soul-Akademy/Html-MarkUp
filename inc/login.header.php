@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/assets/css/style.min.css">
 <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
 </head>
-<body class="<?php print basename($_SERVER['REQUEST_URI'], '.php');?>">
+<body class="login">
 <!-- Fixed navbar -->
  <nav class="navbar navbar-inverse">
    <div class="container">

@@ -494,7 +494,7 @@ footer {
 ////// Login
 //////////////////////////////
 body.login {
-  .navbar li.orange{background: @brand-primary;}
+  .navbar li.orange{background: @brand-primary; padding-left: 24px; padding-right: 24px;}
   background: #f8f8f8 url('/assets/img/login-bkd.jpg') 92% 100% no-repeat;
   background-attachment: fixed;
   #login {
@@ -538,8 +538,34 @@ body.login {
             .angled(@brand-success; 120px; 41px; 40px; );
           }
         }
-
-      }
+        
+        // CHOOSE ACCTOUNT TYPE
+        a.account-type {
+          display:block;
+          text-transform: uppercase;
+          padding: 28px 30px; overflow: hidden;
+          font: 300 1.3em/1em 'Lato',sans-serif;
+          margin-top: 20px;
+          transition: background-color 0.35s ease;
+          background: @gray-darker url('/assets/img/enthusiast.png')  70% 100% no-repeat;
+          &:hover {
+            color: @brand-primary; text-shadow: 1px 1px 2px #000; background: @brand-primary;
+            text-decoration: none;
+          }
+          div {
+            float:left; color: #fff;
+            &:nth-child(2) {
+              color: #fff; display:block; float: right;
+              padding: 0 20px;
+            }
+          }
+          &.pro {
+            background: @gray url('/assets/img/pro.png')  70% 10px no-repeat;
+            &:hover {background-color: @brand-blue;}
+          }
+        }
+        p.type-desc {margin-top: 12px; color: @gray-light;}
+      } // .panel-body
 
     } // .panel-login
     .not-member {color:@gray; width: 80%; margin: 0 auto; text-align: center;}

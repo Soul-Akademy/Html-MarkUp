@@ -6887,6 +6887,7 @@ button.close {
 .icon-email:before,
 .icon-lock:before,
 .icon-personal-info:before,
+.icon-search:before,
 .icon-send:before,
 .icon-settings:before {
   display: inline-block;
@@ -6907,6 +6908,7 @@ button.close {
 .icon-email:before { content: "\f105"; }
 .icon-lock:before { content: "\f106"; }
 .icon-personal-info:before { content: "\f102"; }
+.icon-search:before { content: "\f108"; }
 .icon-send:before { content: "\f107"; }
 .icon-settings:before { content: "\f101"; }
 
@@ -6993,6 +6995,23 @@ button.close {
   left: -20px;
   top: 0;
 }
+.simple-cover {
+  height: 200px;
+  background: #3c3c3c;
+  background: -moz-linear-gradient(top, #3c3c3c 40%, #080808 100%);
+  background: -webkit-linear-gradient(top, #3c3c3c 40%, #080808 100%);
+  background: linear-gradient(to bottom, #3c3c3c 40%, #080808 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c3c3c', endColorstr='#080808', GradientType=0);
+}
+.simple-cover .container {
+  position: relative;
+  height: 200px;
+}
+.simple-cover .container img.atrium-logo {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
 .selectwrap {
   position: relative;
 }
@@ -7052,23 +7071,6 @@ footer {
 }
 .dropshadow {
   box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
-}
-#atrium .cover {
-  height: 200px;
-  background: #3c3c3c;
-  background: -moz-linear-gradient(top, #3c3c3c 40%, #080808 100%);
-  background: -webkit-linear-gradient(top, #3c3c3c 40%, #080808 100%);
-  background: linear-gradient(to bottom, #3c3c3c 40%, #080808 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c3c3c', endColorstr='#080808', GradientType=0);
-}
-#atrium .cover .container {
-  position: relative;
-  height: 200px;
-}
-#atrium .cover .container img.atrium-logo {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
 }
 #atrium .option-panels {
   box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
@@ -7383,6 +7385,7 @@ footer {
   font-size: 30px;
   position: relative;
   padding-left: 50px;
+  padding-left: 0;
   margin-bottom: 36px;
   color: #272727;
   text-transform: uppercase;
@@ -7990,9 +7993,261 @@ body.login #login .not-member {
   margin: 0 auto;
   text-align: center;
 }
+#find-pro img.img-circle {
+  float: left !important;
+  margin-right: 10px;
+}
+#find-pro .pros-listings {
+  box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
+  padding: 20px 40px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+#find-pro .pros-listings .row {
+  border-bottom: 1px solid #dedede;
+}
+#find-pro .pros-listings .search-wrap {
+  margin-left: -40px;
+  margin-right: -95px;
+}
+#find-pro .pros-listings .search {
+  margin: -20px -40px 0 -40px;
+  padding: 20px 20px 20px 0px;
+  background: #2EC0FE;
+  position: relative;
+  background-color: #2EC0FE;
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+#find-pro .pros-listings .search:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 130px solid #2EC0FE;
+  border-left: 20px solid transparent;
+  left: -20px;
+  top: 0;
+}
+#find-pro .pros-listings .search:before {
+  border-left: 60px solid transparent;
+  left: -60px;
+}
+#find-pro .pros-listings .search h1 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  padding-left: 22px;
+  color: white;
+  padding-left: 0;
+}
+#find-pro .pros-listings .search h1 small,
+#find-pro .pros-listings .search h1 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #9e9e9e;
+}
+#find-pro .pros-listings .search h1 small,
+#find-pro .pros-listings .search h1 .small {
+  font-size: 65%;
+}
+#find-pro .pros-listings .search h1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -8px;
+  top: 18px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #74cef9;
+  -moz-transform: skew(22deg);
+  -webkit-transform: skew(22deg);
+  transform: skew(22deg);
+}
+#find-pro .pros-listings .search h1 span {
+  text-transform: capitalize;
+  font: normal 0.7em/0.7em 'Lato', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 30px;
+}
+#find-pro .pros-listings .search .form-group {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: white;
+  -moz-transform: skewX(24deg);
+  -webkit-transform: skewX(24deg);
+  -o-transform: skewX(24deg);
+  -ms-transform: skewX(24deg);
+  transform: skewX(24deg);
+}
+#find-pro .pros-listings .search .form-group input.form-control {
+  height: 40px;
+  border: 0;
+  -moz-transform: skewX(-24deg);
+  -webkit-transform: skewX(-24deg);
+  -o-transform: skewX(-24deg);
+  -ms-transform: skewX(-24deg);
+  transform: skewX(-24deg);
+}
+#find-pro .pros-listings .search .form-group input.form-control:focus {
+  outline: none;
+  border: 0;
+}
+#find-pro .pros-listings .search a.submit {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: white;
+  font-size: 3.2em;
+}
+#find-pro .pros-listings h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #9e9e9e;
+  text-transform: uppercase;
+  margin-left: 60px;
+  padding: 20px 0 40px 0;
+}
+#find-pro .pros-listings h2 small,
+#find-pro .pros-listings h2 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #9e9e9e;
+}
+#find-pro .pros-listings h2 small,
+#find-pro .pros-listings h2 .small {
+  font-size: 75%;
+}
+#find-pro .pros-listings .pro {
+  font-size: 1.2em;
+  color: #848484;
+  margin: 10px 0 20px 0;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+#find-pro .pros-listings .pro span {
+  color: #565656;
+  font-size: 1.2em;
+}
+#find-pro .pros-listings .pro .rating {
+  unicode-bidi: bidi-override;
+  direction: ltr;
+}
+#find-pro .pros-listings .pro .rating > span.star {
+  color: #9e9e9e;
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+#find-pro .pros-listings .pro .rating span.filled {
+  color: #f6e17f;
+  text-shadow: 0 0 1px #000;
+}
+#find-pro .pros-listings .pro .rating span.filled:before {
+  content: "\2605";
+  position: absolute;
+}
+#find-pro .pros-listings .pro .rating span.average {
+  margin: 0 7px 0 12px;
+}
 @media only screen and (max-width: 1368px) {
   .navbar-center {
     margin-left: 0px;
+  }
+  #find-pro .pros-listings {
+    padding: 10px;
+  }
+  #find-pro .pros-listings .search {
+    margin: -15px 0 0 0;
+    position: relative;
+    background-color: #2EC0FE;
+    width: 100%;
+    height: auto;
+    padding-left: 10px;
+  }
+  #find-pro .pros-listings .search:before {
+    height: 0;
+    width: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 130px solid #2EC0FE;
+    border-left: 20px solid transparent;
+    left: -20px;
+    top: 0;
+  }
+  #find-pro .pros-listings .search:before {
+    border-left: none;
+    left: 0px;
+  }
+  #find-pro .pros-listings .search h1 {
+    margin-left: 30px;
+  }
+  #find-pro .pros-listings .search .form-inline {
+    margin-left: 30px;
+    margin-right: 66px;
+  }
+  #find-pro .pros-listings .search .form-group {
+    overflow: hidden;
+    margin-right: 3px;
+    -moz-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    -o-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  #find-pro .pros-listings .search .form-group input.form-control {
+    border: 0;
+    -moz-transform: skewX(0deg);
+    -webkit-transform: skewX(0deg);
+    -o-transform: skewX(0deg);
+    -ms-transform: skewX(0deg);
+    transform: skewX(0deg);
+  }
+  #find-pro .pros-listings .search a.submit {
+    position: relative;
+    display: block;
+    font-size: 2.2em;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
+  #find-pro .pros-listings h2 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #9e9e9e;
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 10px 0 20px 0;
+  }
+  #find-pro .pros-listings h2 small,
+  #find-pro .pros-listings h2 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #9e9e9e;
+  }
+  #find-pro .pros-listings h2 small,
+  #find-pro .pros-listings h2 .small {
+    font-size: 75%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -8073,6 +8328,9 @@ body.login #login .not-member {
   }
   #profile .user-nav ul.profile-nav > li {
     margin: 0 10px;
+  }
+  #find-pro .pros-listings .search h1 span {
+    display: none;
   }
 }
 @media only screen and (max-width: 480px) {

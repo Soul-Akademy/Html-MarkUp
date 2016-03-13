@@ -1,7 +1,7 @@
 <?php include("inc/create.header.php"); ?>
 
 <div id="atrium">
-  <div class="cover">
+  <div class="simple-cover">
     <div class="container">
       <img class="atrium-logo" src="/assets/img/atrium.png" alt="">
     </div>

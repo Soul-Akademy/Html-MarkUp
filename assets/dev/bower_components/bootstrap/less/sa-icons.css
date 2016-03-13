@@ -27,6 +27,7 @@
 .icon-email:before,
 .icon-lock:before,
 .icon-personal-info:before,
+.icon-search:before,
 .icon-send:before,
 .icon-settings:before {
   display: inline-block;
@@ -47,5 +48,6 @@
 .icon-email:before { content: "\f105"; }
 .icon-lock:before { content: "\f106"; }
 .icon-personal-info:before { content: "\f102"; }
+.icon-search:before { content: "\f108"; }
 .icon-send:before { content: "\f107"; }
 .icon-settings:before { content: "\f101"; }

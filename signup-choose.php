@@ -14,7 +14,7 @@
           </a>
           <p class="type-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis.</p>
           
-          <a class="account-type pro" href="">
+          <a class="account-type pro" href="/find-a-pro.php">
             <div>Professional </div>
             <div>Go</div>
           </a>

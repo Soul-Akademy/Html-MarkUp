@@ -6591,6 +6591,8 @@ button.close {
 .modal-header:after,
 .modal-footer:before,
 .modal-footer:after,
+.search-wrap:before,
+.search-wrap:after,
 #profile .feed-wrap:before,
 #profile .feed-wrap:after {
   content: " ";
@@ -6612,6 +6614,7 @@ button.close {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after,
+.search-wrap:after,
 #profile .feed-wrap:after {
   clear: both;
 }
@@ -6884,12 +6887,14 @@ button.close {
 
 [data-icon]:before,
 .icon-certificate:before,
+.icon-connection:before,
 .icon-email:before,
 .icon-lock:before,
 .icon-personal-info:before,
 .icon-search:before,
 .icon-send:before,
-.icon-settings:before {
+.icon-settings:before,
+.icon-tv:before {
   display: inline-block;
   font-family: "sa-icons";
   font-style: normal;
@@ -6905,12 +6910,14 @@ button.close {
 }
 
 .icon-certificate:before { content: "\f104"; }
+.icon-connection:before { content: "\f10a"; }
 .icon-email:before { content: "\f105"; }
 .icon-lock:before { content: "\f106"; }
 .icon-personal-info:before { content: "\f102"; }
 .icon-search:before { content: "\f108"; }
 .icon-send:before { content: "\f107"; }
 .icon-settings:before { content: "\f101"; }
+.icon-tv:before { content: "\f109"; }
 
 .navbar li a span.icon-settings {
   color: #ff7c34;
@@ -6924,6 +6931,10 @@ button.close {
 .nogutters {
   padding-left: 3px;
   padding-right: 3px;
+}
+.spacer {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .angled-deco-orange {
   margin: -10px -15px;
@@ -7049,6 +7060,130 @@ button.close {
   position: absolute;
   pointer-events: none;
   display: block;
+}
+.search-wrap {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: 1px solid #dedede;
+}
+.search-wrap img.search-icon {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.search-wrap .search {
+  padding: 20px 20px 20px 0px;
+  background: #2EC0FE;
+  position: relative;
+  background-color: #2EC0FE;
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+.search-wrap .search:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 130px solid #2EC0FE;
+  border-left: 20px solid transparent;
+  left: -20px;
+  top: 0;
+}
+.search-wrap .search:before {
+  border-left: 60px solid transparent;
+  left: -60px;
+}
+.search-wrap .search h1 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  padding-left: 22px;
+  color: white;
+  padding-left: 0;
+}
+.search-wrap .search h1 small,
+.search-wrap .search h1 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #9e9e9e;
+}
+.search-wrap .search h1 small,
+.search-wrap .search h1 .small {
+  font-size: 65%;
+}
+.search-wrap .search h1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -8px;
+  top: 18px;
+  height: 30px;
+  width: 0;
+  border-right: 3px solid #74cef9;
+  -moz-transform: skew(22deg);
+  -webkit-transform: skew(22deg);
+  transform: skew(22deg);
+}
+.search-wrap .search h1 span {
+  text-transform: capitalize;
+  font: normal 0.7em/0.7em 'Lato', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 30px;
+}
+.search-wrap .search .form-group {
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: white;
+  -moz-transform: skewX(24deg);
+  -webkit-transform: skewX(24deg);
+  -o-transform: skewX(24deg);
+  -ms-transform: skewX(24deg);
+  transform: skewX(24deg);
+}
+.search-wrap .search .form-group input.form-control {
+  height: 40px;
+  border: 0;
+  -moz-transform: skewX(-24deg);
+  -webkit-transform: skewX(-24deg);
+  -o-transform: skewX(-24deg);
+  -ms-transform: skewX(-24deg);
+  transform: skewX(-24deg);
+}
+.search-wrap .search .form-group input.form-control:focus {
+  outline: none;
+  border: 0;
+}
+.search-wrap .search a.submit {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  color: white;
+  font-size: 3.2em;
+}
+.search-wrap .search.green {
+  background: #8de63c;
+  margin-right: -15px;
+}
+.search-wrap .search.green:before {
+  border-top-color: #8de63c;
+}
+.search-wrap .search.green h1:after {
+  border-right-color: #fff;
+}
+.search-wrap .search.green .form-group {
+  width: 90%;
 }
 /* Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -7999,115 +8134,8 @@ body.login #login .not-member {
 }
 #find-pro .pros-listings {
   box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
-  padding: 20px 40px;
-  margin-top: 30px;
+  margin-top: 60px;
   overflow: hidden;
-}
-#find-pro .pros-listings .row {
-  border-bottom: 1px solid #dedede;
-}
-#find-pro .pros-listings .search-wrap {
-  margin-left: -40px;
-  margin-right: -95px;
-}
-#find-pro .pros-listings .search {
-  margin: -20px -40px 0 -40px;
-  padding: 20px 20px 20px 0px;
-  background: #2EC0FE;
-  position: relative;
-  background-color: #2EC0FE;
-  width: 100%;
-  height: auto;
-  padding-left: 10px;
-}
-#find-pro .pros-listings .search:before {
-  height: 0;
-  width: 0;
-  content: "";
-  display: block;
-  position: absolute;
-  border-top: 130px solid #2EC0FE;
-  border-left: 20px solid transparent;
-  left: -20px;
-  top: 0;
-}
-#find-pro .pros-listings .search:before {
-  border-left: 60px solid transparent;
-  left: -60px;
-}
-#find-pro .pros-listings .search h1 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin: 0 0 15px 0;
-  padding-left: 22px;
-  color: white;
-  padding-left: 0;
-}
-#find-pro .pros-listings .search h1 small,
-#find-pro .pros-listings .search h1 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #9e9e9e;
-}
-#find-pro .pros-listings .search h1 small,
-#find-pro .pros-listings .search h1 .small {
-  font-size: 65%;
-}
-#find-pro .pros-listings .search h1:after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: -8px;
-  top: 18px;
-  height: 30px;
-  width: 0;
-  border-right: 3px solid #74cef9;
-  -moz-transform: skew(22deg);
-  -webkit-transform: skew(22deg);
-  transform: skew(22deg);
-}
-#find-pro .pros-listings .search h1 span {
-  text-transform: capitalize;
-  font: normal 0.7em/0.7em 'Lato', sans-serif;
-  color: rgba(255, 255, 255, 0.7);
-  margin-left: 30px;
-}
-#find-pro .pros-listings .search .form-group {
-  overflow: hidden;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  background: white;
-  -moz-transform: skewX(24deg);
-  -webkit-transform: skewX(24deg);
-  -o-transform: skewX(24deg);
-  -ms-transform: skewX(24deg);
-  transform: skewX(24deg);
-}
-#find-pro .pros-listings .search .form-group input.form-control {
-  height: 40px;
-  border: 0;
-  -moz-transform: skewX(-24deg);
-  -webkit-transform: skewX(-24deg);
-  -o-transform: skewX(-24deg);
-  -ms-transform: skewX(-24deg);
-  transform: skewX(-24deg);
-}
-#find-pro .pros-listings .search .form-group input.form-control:focus {
-  outline: none;
-  border: 0;
-}
-#find-pro .pros-listings .search a.submit {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  color: white;
-  font-size: 3.2em;
 }
 #find-pro .pros-listings h2 {
   font-family: inherit;
@@ -8164,44 +8192,78 @@ body.login #login .not-member {
 #find-pro .pros-listings .pro .rating span.average {
   margin: 0 7px 0 12px;
 }
+#mychannels {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
+}
+#mychannels h2 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #9e9e9e;
+  margin: 25px 0 30px 0;
+}
+#mychannels h2 small,
+#mychannels h2 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #9e9e9e;
+}
+#mychannels h2 small,
+#mychannels h2 .small {
+  font-size: 75%;
+}
+#mychannels h2 .glypicon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+#mychannels .thumb {
+  margin-bottom: 20px;
+  line-height: 2.3em;
+}
+#mychannels .channel {
+  margin-bottom: 30px;
+}
+#mychannels .channel .type {
+  font-size: 1.3em;
+  margin-bottom: 6px;
+}
+#mychannels .channel .type span {
+  color: #848484;
+}
+#mychannels .channel .subs {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  color: #848484;
+}
+#mychannels .channel p {
+  font-size: 1.1em;
+  font-weight: 300;
+}
 @media only screen and (max-width: 1368px) {
   .navbar-center {
     margin-left: 0px;
   }
-  #find-pro .pros-listings {
-    padding: 10px;
-  }
-  #find-pro .pros-listings .search {
-    margin: -15px 0 0 0;
-    position: relative;
-    background-color: #2EC0FE;
-    width: 100%;
-    height: auto;
-    padding-left: 10px;
-  }
-  #find-pro .pros-listings .search:before {
-    height: 0;
-    width: 0;
-    content: "";
-    display: block;
-    position: absolute;
-    border-top: 130px solid #2EC0FE;
-    border-left: 20px solid transparent;
-    left: -20px;
-    top: 0;
-  }
-  #find-pro .pros-listings .search:before {
+  .search-wrap .search:before {
     border-left: none;
     left: 0px;
   }
-  #find-pro .pros-listings .search h1 {
+  .search-wrap .search h1 {
     margin-left: 30px;
   }
-  #find-pro .pros-listings .search .form-inline {
-    margin-left: 30px;
-    margin-right: 66px;
+  .search-wrap .search .form-inline {
+    margin-left: 15px;
+    margin-right: 0;
   }
-  #find-pro .pros-listings .search .form-group {
+  .search-wrap .search .form-group {
     overflow: hidden;
     margin-right: 3px;
     -moz-transform: skewX(0deg);
@@ -8210,7 +8272,7 @@ body.login #login .not-member {
     -ms-transform: skewX(0deg);
     transform: skewX(0deg);
   }
-  #find-pro .pros-listings .search .form-group input.form-control {
+  .search-wrap .search .form-group input.form-control {
     border: 0;
     -moz-transform: skewX(0deg);
     -webkit-transform: skewX(0deg);
@@ -8218,7 +8280,7 @@ body.login #login .not-member {
     -ms-transform: skewX(0deg);
     transform: skewX(0deg);
   }
-  #find-pro .pros-listings .search a.submit {
+  .search-wrap .search a.submit {
     position: relative;
     display: block;
     font-size: 2.2em;
@@ -8248,6 +8310,9 @@ body.login #login .not-member {
   #find-pro .pros-listings h2 small,
   #find-pro .pros-listings h2 .small {
     font-size: 75%;
+  }
+  .search-wrap .search.green .form-group {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -8306,6 +8371,9 @@ body.login #login .not-member {
   #create-profile .pro-form form input.form-control,
   #create-profile .pro-form form select.form-control {
     margin-bottom: 10px;
+  }
+  .search h1 span {
+    display: none;
   }
   #profile .cover {
     height: 280px;

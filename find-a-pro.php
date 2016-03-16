@@ -27,11 +27,11 @@
     </div>
   </div>
   <div class="brand-gradient"></div>  
-  <div class="container top-gap-lg">
+  <div class="container">
     <div class="pros-listings">
-      <div class="row search-wrap">
+      <div class="search-wrap">
         <div class="col-lg-2 visible-lg">
-          <img class="top-gap left-gap-lg" src="/assets/img/lift-icon.png" alt="">
+          <img class="search-icon" src="/assets/img/lift-icon.png" alt="">
         </div>  
         <div class="col-lg-10">
           <div class="search">
@@ -57,20 +57,23 @@
           </div>
         </div>
       </div>
-      
-      <h2>Top Professionals in Your Area</h2>
-      <?php print $pro; ?>
-      <?php print $pro; ?>
-      <?php print $pro; ?>
-      <?php print $pro; ?>
+      <div class="spacer">
+        <h2>Top Professionals in Your Area</h2>
+        <?php print $pro; ?>
+        <?php print $pro; ?>
+        <?php print $pro; ?>
+        <?php print $pro; ?>
+      </div>
     </div>
     
     <div class="pros-listings">
-      <h2>Search Results</h2>
-      <?php print $pro; ?>
-      <?php print $pro; ?>
-      <?php print $pro; ?>
-      <?php print $pro; ?>
+      <div class="spacer">
+        <h2>Search Results</h2>
+        <?php print $pro; ?>
+        <?php print $pro; ?>
+        <?php print $pro; ?>
+        <?php print $pro; ?>
+      </div>
     </div>
   </div>
 </div>

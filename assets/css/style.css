@@ -8027,7 +8027,7 @@ body.login #login .panel-login .panel-body .form-group {
   margin: 20px 0;
 }
 body.login #login .panel-login .panel-body .form-group input {
-  font-family: 'sa-icons';
+  font-family: 'sa-icons', 'Lato';
 }
 body.login #login .panel-login .panel-body .form-group .input-append input.toggle-pass {
   border-right: none;

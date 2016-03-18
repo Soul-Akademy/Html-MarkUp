@@ -56,6 +56,14 @@
   &.sm {.angled(@brand-success; 40px; 41px; 40px;);  }
 }
 
+.angled-deco-gray {
+  margin: -10px -15px;
+  .glyphicon {color: white;position: absolute; right: 10px; top: 15px;}
+  .angled(@gray-light; 120px; 41px; 40px;);
+  .pull-right();
+  &.sm {.angled(@gray-light; 40px; 41px; 40px;);  }
+}
+
 .simple-cover {
   height: 200px;
   background: #3c3c3c;
@@ -372,11 +380,12 @@ footer {
     // margin-top: @navbar-height;
     height: 405px;
     width: 100%;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover-enthusiast.jpg') no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover-enthusiast.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover-enthusiast.jpg') no-repeat;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .bar {
     position: relative;
@@ -425,7 +434,7 @@ footer {
 
 
     ul.profile-nav {
-      margin-top: 110px;
+      margin-top: 104px;
       .list-inline();
       > li {
         margin: 0 30px;
@@ -433,6 +442,7 @@ footer {
           color: @gray-dark; font: 300 1.4em/1.4em 'Lato',sans-serif;
           text-transform: uppercase;
           &:hover {color: @brand-primary; text-decoration: none;}
+          &.active {border-bottom: 2px solid @brand-primary; padding-bottom: 6px;}
         }
       }
     } // ul.profile-nav
@@ -451,6 +461,10 @@ footer {
       }
       .panel-body {
         a.view-more {margin-top: 30px; display:block; width: 100%; text-align:center;}
+        img.circled {
+          .nogutters();
+          border-radius: 50%;
+        }
       }
       .panel-footer {
         h4 {margin-top: 0;}
@@ -555,8 +569,52 @@ footer {
     //////////////////////////
 
   } // .feed-wrap
+  &.enthusiast {
+    .user-nav {
+      margin-top: -110px;
+      .profile-nav {margin-top: 66px;}
+    }
+    img.pic {border-radius: 50%;}
+    .angled-deco-gray {width: 50%;}
+    
+    .panel-special {
+      padding-bottom: 80px;
+      .panel-heading {
+        background: @gray;
+        &:after {
+          border-right: 2px solid @gray-light;
+        }
+      }
+      .panel-body {
+        .video-wrap {
+          margin-bottom: 20px; margin-top: 15px;
+          .video {
+            width: 100%; min-height: 180px;
+            background: @gray-lighter;
+            position: relative;
+            .runtime {
+              color: #fff;
+              background: @brand-primary;
+              padding: 2px 8px; bottom:10px; right: 10px;
+              .angled(@brand-primary; 56px; 25px; 24px);
+              &:before {
+                border-left: 10px solid transparent;
+                left: -10px;
+              }
+              position: absolute;
+              // .angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
+            }
+          }
+          .title {margin-top: 10px; margin-bottom: 6px;}
+          span.exercise-num {color: @gray-light;}
+          span.exercise-type {color: @brand-info; margin-left: 16px;}
+        } // .video-wrap
+      } // .panel-body
+    } // .panel-special
+    
+  }
+} // #profile
 
-}
 //////////////////////////////
 ////// Login
 //////////////////////////////

@@ -3481,6 +3481,63 @@ fieldset[disabled] .btn-danger.focus {
   color: #d9534f;
   background-color: #fff;
 }
+.btn-outline {
+  color: #ff7c34;
+  background-color: transparent;
+  border-color: #ff7c34;
+}
+.btn-outline:focus,
+.btn-outline.focus {
+  color: #ff7c34;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #b34000;
+}
+.btn-outline:hover {
+  color: #ff7c34;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #f65700;
+}
+.btn-outline:active,
+.btn-outline.active,
+.open > .dropdown-toggle.btn-outline {
+  color: #ff7c34;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #f65700;
+}
+.btn-outline:active:hover,
+.btn-outline.active:hover,
+.open > .dropdown-toggle.btn-outline:hover,
+.btn-outline:active:focus,
+.btn-outline.active:focus,
+.open > .dropdown-toggle.btn-outline:focus,
+.btn-outline:active.focus,
+.btn-outline.active.focus,
+.open > .dropdown-toggle.btn-outline.focus {
+  color: #ff7c34;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #b34000;
+}
+.btn-outline:active,
+.btn-outline.active,
+.open > .dropdown-toggle.btn-outline {
+  background-image: none;
+}
+.btn-outline.disabled:hover,
+.btn-outline[disabled]:hover,
+fieldset[disabled] .btn-outline:hover,
+.btn-outline.disabled:focus,
+.btn-outline[disabled]:focus,
+fieldset[disabled] .btn-outline:focus,
+.btn-outline.disabled.focus,
+.btn-outline[disabled].focus,
+fieldset[disabled] .btn-outline.focus {
+  background-color: transparent;
+  border-color: #ff7c34;
+}
+.btn-outline .badge {
+  color: transparent;
+  background-color: #ff7c34;
+}
 .btn-link {
   color: #208cc0;
   font-weight: normal;
@@ -4032,6 +4089,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   white-space: nowrap;
 }
 .input-group-btn > .btn {
+  padding: 14px;
+  border-left: 0;
   position: relative;
 }
 .input-group-btn > .btn + .btn {
@@ -7986,6 +8045,21 @@ fieldset[disabled] #create-profile a.save.focus {
   padding-left: 0;
   padding-right: 0;
 }
+#profile .feed-wrap .panel-special .panel-body .searchbox {
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+  margin: 10px 0 20px 0;
+  padding: 0 25px 20px 25px;
+}
+#profile .feed-wrap .panel-special .panel-body .searchbox input.form-control {
+  position: relative;
+}
+#profile .feed-wrap .panel-special .panel-body .searchbox input.form-control :before {
+  position: absolute;
+  right: 10px;
+  content: 'x';
+  color: red;
+}
 #profile .feed-wrap .panel-special .panel-footer {
   overflow: hidden;
 }
@@ -8110,6 +8184,28 @@ fieldset[disabled] #create-profile a.save.focus {
 #profile.enthusiast .panel-special .panel-body .video-wrap span.exercise-type {
   color: #208cc0;
   margin-left: 16px;
+}
+#profile.enthusiast .buddy img.img-circle {
+  float: left !important;
+  margin-right: 10px;
+}
+#profile.enthusiast .buddy p {
+  font-size: 1.2em;
+  color: #848484;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+#profile.enthusiast .buddy p span {
+  color: #565656;
+  font-size: 1.2em;
+}
+#profile.enthusiast .buddy p a {
+  border-radius: 3px;
+  margin-top: 10px;
+}
+#profile.enthusiast .buddy p a span {
+  color: #ff7c34;
+  margin-right: 6px;
 }
 body.login {
   background: #f8f8f8 url('/assets/img/login-bkd.jpg') 92% 100% no-repeat;

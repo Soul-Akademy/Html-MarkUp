@@ -39,6 +39,7 @@
 .navbar li a span.icon-settings {color: @brand-primary; &:hover {color: #fff;}}
 .navbar-center {margin-left: 260px;}
 .nogutters {padding-left: 3px; padding-right: 3px;}
+.spacer {padding-left: 2em; padding-right: 2em;}
 
 .angled-deco-orange {
   margin: -10px -15px;
@@ -53,6 +54,14 @@
   .angled(@brand-success; 120px; 41px; 40px;);
   .pull-right();
   &.sm {.angled(@brand-success; 40px; 41px; 40px;);  }
+}
+
+.angled-deco-gray {
+  margin: -10px -15px;
+  .glyphicon {color: white;position: absolute; right: 10px; top: 15px;}
+  .angled(@gray-light; 120px; 41px; 40px;);
+  .pull-right();
+  &.sm {.angled(@gray-light; 40px; 41px; 40px;);  }
 }
 
 .simple-cover {
@@ -100,6 +109,71 @@
       display:block;
   }
 } // .selectwrap
+
+.search-wrap {
+  img.search-icon {
+    .img-responsive();
+    .center-block(); margin-top: 30px;
+  }
+  .row();
+  border-bottom: 1px solid #dedede;
+  
+  .search {
+    // margin: -20px -40px 0 -40px;
+    padding: 20px 20px 20px 0px; background: @brand-blue;
+    .angled(@brand-blue , 100% , auto , 130px);
+    &:before {
+      border-left: 60px solid transparent;
+      left: -60px;
+    }
+    // .angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
+    h1 {
+      .h3(); text-transform: uppercase; margin:0 0 15px 0;
+      .left-slash(22deg; -8px /*left position */; 18px /* top position */; 30px /* height */; 3px /*thickness */; #74cef9;);
+      color: white; padding-left: 0;
+      span {
+        text-transform: capitalize;
+        font: normal .7em/.7em 'Lato',sans-serif; color: rgba(255,255,255, .7); margin-left: 30px;
+      }
+    }
+    .form-group {
+      overflow: hidden;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background:white;
+      -moz-transform: skewX(24deg);
+      -webkit-transform: skewX(24deg);
+      -o-transform: skewX(24deg);
+      -ms-transform: skewX(24deg);
+      transform: skewX(24deg);
+      input.form-control {
+        height: 40px; border:0;
+        -moz-transform: skewX(-24deg);
+        -webkit-transform: skewX(-24deg);
+        -o-transform: skewX(-24deg);
+        -ms-transform: skewX(-24deg);
+        transform: skewX(-24deg);
+        &:focus {outline: none; border:0;}
+      }
+    }
+    a.submit {
+      position: absolute; right: 30px; top: 30px;
+      color: white; font-size: 3.2em;
+    }
+    &.green {
+      background: @brand-success;
+      margin-right: -15px;
+      &:before {border-top-color: @brand-success;}
+      h1 {
+        &:after {border-right-color: #fff;}
+      }
+      .form-group {width: 90%;}
+    }
+  } // .search
+  
+} // .search-wrap
+
+
 
 /* Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
@@ -306,11 +380,12 @@ footer {
     // margin-top: @navbar-height;
     height: 405px;
     width: 100%;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover.jpg') no-repeat;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover-enthusiast.jpg') no-repeat;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover-enthusiast.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('/assets/img/profile/cover-enthusiast.jpg') no-repeat;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .bar {
     position: relative;
@@ -359,7 +434,7 @@ footer {
 
 
     ul.profile-nav {
-      margin-top: 110px;
+      margin-top: 104px;
       .list-inline();
       > li {
         margin: 0 30px;
@@ -367,6 +442,7 @@ footer {
           color: @gray-dark; font: 300 1.4em/1.4em 'Lato',sans-serif;
           text-transform: uppercase;
           &:hover {color: @brand-primary; text-decoration: none;}
+          &.active {border-bottom: 2px solid @brand-primary; padding-bottom: 6px;}
         }
       }
     } // ul.profile-nav
@@ -385,6 +461,10 @@ footer {
       }
       .panel-body {
         a.view-more {margin-top: 30px; display:block; width: 100%; text-align:center;}
+        img.circled {
+          .nogutters();
+          border-radius: 50%;
+        }
       }
       .panel-footer {
         h4 {margin-top: 0;}
@@ -423,6 +503,22 @@ footer {
       }
       .panel-body {
         &.ad {padding-left:0; padding-right: 0;}
+        
+        .searchbox {
+          width: 100%;
+          border-bottom: 1px solid @gray-lighter;
+          margin: 10px 0 20px 0;
+          padding: 0 25px 20px 25px;
+          input.form-control{
+            position: relative;
+            :before {
+              position: absolute;
+              right: 10px;
+              content: 'x';
+              color:red;
+            }
+          }
+        }
       }
       .panel-footer {overflow:hidden;}
     } // .panel-special
@@ -489,8 +585,65 @@ footer {
     //////////////////////////
 
   } // .feed-wrap
+  &.enthusiast {
+    .user-nav {
+      margin-top: -110px;
+      .profile-nav {margin-top: 66px;}
+    }
+    img.pic {border-radius: 50%;}
+    .angled-deco-gray {width: 50%;}
+    
+    .panel-special {
+      padding-bottom: 80px;
+      .panel-heading {
+        background: @gray;
+        &:after {
+          border-right: 2px solid @gray-light;
+        }
+      }
+      .panel-body {
+        .video-wrap {
+          margin-bottom: 20px; margin-top: 15px;
+          .video {
+            width: 100%; min-height: 180px;
+            background: @gray-lighter;
+            position: relative;
+            .runtime {
+              color: #fff;
+              background: @brand-primary;
+              padding: 2px 8px; bottom:10px; right: 10px;
+              .angled(@brand-primary; 56px; 25px; 24px);
+              &:before {
+                border-left: 10px solid transparent;
+                left: -10px;
+              }
+              position: absolute;
+              // .angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
+            }
+          }
+          .title {margin-top: 10px; margin-bottom: 6px;}
+          span.exercise-num {color: @gray-light;}
+          span.exercise-type {color: @brand-info; margin-left: 16px;}
+        } // .video-wrap
+      } // .panel-body
+    } // .panel-special
+    
+    .buddy {
+      img.img-circle {.pull-left(); margin-right: 10px;}
+      p {
+        font-size: 1.2em; color: @gray;
+        overflow:hidden; margin-bottom: 40px;
+        span {color: @gray-dark; font-size: 1.2em;}
+        a {
+          border-radius:3px; margin-top: 10px;
+          span {color: @brand-primary; margin-right: 6px;}
+        }
+      }
+    }
+    
+  } // &.enthusiast
+} // #profile
 
-}
 //////////////////////////////
 ////// Login
 //////////////////////////////
@@ -522,7 +675,7 @@ body.login {
         padding: 30px 40px;
         .form-group {
           margin: 20px 0;
-          input {font-family: 'sa-icons';}
+          input {font-family: 'sa-icons','Lato';}
           .input-append input.toggle-pass {border-right: none;}
           .input-group-addon {background: #fff; border-left: none;}
           a.forgot-pass {display:block; padding: 20px 0 30px 0; .pull-right(); clear:both;}
@@ -579,54 +732,10 @@ body.login {
 #find-pro {
   img.img-circle {.pull-left(); margin-right: 10px;}
   .pros-listings {
-    .dropshadow(); padding: 20px 40px;
-    margin-top: 30px;
+    .dropshadow(); 
+    margin-top: 60px;
     overflow:hidden;
-    .row {border-bottom: 1px solid #dedede;}
-    .search-wrap {margin-left: -40px; margin-right: -95px;}
-    .search {
-      margin: -20px -40px 0 -40px;
-      padding: 20px 20px 20px 0px; background: @brand-blue;
-      .angled(@brand-blue , 100% , auto , 130px);
-      &:before {
-        border-left: 60px solid transparent;
-        left: -60px;
-      }
-      // .angled(@colorfill; @shapewidth; @shapeheight; @shapeangle; )
-      h1 {
-        .h3(); text-transform: uppercase; margin:0 0 15px 0;
-        .left-slash(22deg; -8px /*left position */; 18px /* top position */; 30px /* height */; 3px /*thickness */; #74cef9;);
-        color: white; padding-left: 0;
-        span {
-          text-transform: capitalize;
-          font: normal .7em/.7em 'Lato',sans-serif; color: rgba(255,255,255, .7); margin-left: 30px;
-        }
-      }
-      .form-group {
-        overflow: hidden;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        background:white;
-        -moz-transform: skewX(24deg);
-        -webkit-transform: skewX(24deg);
-        -o-transform: skewX(24deg);
-        -ms-transform: skewX(24deg);
-        transform: skewX(24deg);
-        input.form-control {
-          height: 40px; border:0;
-          -moz-transform: skewX(-24deg);
-          -webkit-transform: skewX(-24deg);
-          -o-transform: skewX(-24deg);
-          -ms-transform: skewX(-24deg);
-          transform: skewX(-24deg);
-          &:focus {outline: none; border:0;}
-        }
-      }
-      a.submit {
-        position: absolute; right: 30px; top: 30px;
-        color: white; font-size: 3.2em;
-      }
-    }
+    
     h2 {
       .h4(); color: @gray-light; text-transform: uppercase;
       margin-left: 60px; padding: 20px 0 40px 0;
@@ -659,6 +768,37 @@ body.login {
   } // .pros-listings
 
 } // #find-pro
+
+//////////////////////////////
+////// My Channels
+//////////////////////////////
+#mychannels {
+  margin-top: 60px;
+  padding-bottom: 30px; overflow: hidden;
+  h2 {
+    .h4(); text-transform: uppercase;
+    font-weight: 300;
+    color: @gray-light; margin: 25px 0 30px 0;
+    .glypicon {margin-right: 10px; font-size: 1.2em;}
+  }
+  .dropshadow();
+  .thumb {
+    margin-bottom: 20px;
+    line-height: 2.3em;
+    // padding-left: 15px;
+    // padding-right: 15px;
+  }
+  .channel {
+    margin-bottom: 30px;
+    .type {
+      font-size: 1.3em; margin-bottom: 6px;
+      span {color:@gray;}
+    }
+    .subs {font-size: 1.2em; margin-bottom: 6px; color: @gray;}
+    p {font-size: 1.1em; font-weight: 300;}
+  }
+} // #mychannels
+
 
 
 @import "media-queries.less";

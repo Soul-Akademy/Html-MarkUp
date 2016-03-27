@@ -24,7 +24,7 @@
      </div>
      <div id="navbar" class="navbar-collapse collapse">
        <ul class="nav navbar-nav navbar-right">
-         <li class="active"><a href="#">Atrium</a></li>
+         <li><a href="#">Atrium</a></li>
          <li><a href="#friends">My Locker Room</a></li>
          <li><a href="#atrium">Friends</a></li>
          <li><a href="#channels">My Channels</a></li>

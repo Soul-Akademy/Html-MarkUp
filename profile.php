@@ -19,7 +19,7 @@
     </div>
     <div class="col-md-9 col-sm-7 col-xs-12">
       <ul class="profile-nav">
-        <li><a href="#">Profile</a></li>
+        <li><a class="active" href="#">Profile</a></li>
         <li><a href="#">Channel</a></li>
         <li><a href="#">About</a></li>
       </ul>

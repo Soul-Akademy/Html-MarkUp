@@ -3,16 +3,14 @@
 <div id="atrium">
   <div class="simple-cover">
     <div class="container">
-      <img class="atrium-logo" src="/assets/img/atrium.png" alt="">
+      <img class="atrium-logo img-responsive" src="/assets/img/atrium.png" alt="">
     </div>
   </div>
   <div class="brand-gradient"></div>  
   <div class="container">
     
     <div class="option-panels">
-      <div class="icon">
-        
-      </div>
+      <div class="icon"></div>
       <div class="text">
         <h2 class="orange">Create Profile</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
@@ -21,9 +19,7 @@
     </div>
     
     <div class="option-panels">
-      <div class="icon pro">
-        
-      </div>
+      <div class="icon pro"></div>
       <div class="text">
         <h2 class="blue">Find a Professional</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
@@ -32,9 +28,7 @@
     </div>
     
     <div class="option-panels">
-      <div class="icon channels">
-        
-      </div>
+      <div class="icon channels"></div>
       <div class="text">
         <h2 class="green">Search Channels</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
@@ -43,9 +37,7 @@
     </div>
     
     <div class="option-panels">
-      <div class="icon review">
-        
-      </div>
+      <div class="icon review"></div>
       <div class="text">
         <h2 class="gray">Write a Review</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>

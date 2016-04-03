@@ -223,7 +223,7 @@ footer {
       &.review {height: 98px; background-position: 0 -335px;}
     }
     .text {
-      width: 60%; margin-right: 30px; padding-left: 15px;
+      width: 60%; margin-right: 30px; padding-left: 0px;
       h2 {
         position: relative;
         .h3(); text-transform: uppercase;
@@ -231,7 +231,7 @@ footer {
           .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-primary;);
         }
         &.blue {
-          .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-info;);
+          .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-blue;);
         }
         &.green {
           .left-slash(30deg; 20px /*left position */; 4px /* top position */; 30px /* height */; 3px /*thickness */; @brand-success;);
@@ -252,7 +252,7 @@ footer {
       }
       right:0; top: 0; position: absolute; z-index: 1;
       div {
-        position: absolute; top: 40%; left: 40%;
+        position: absolute; top: 30%; left: 40%;
         font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
@@ -265,14 +265,14 @@ footer {
       &.expanded {width: 78%;}
     }
     .findpro-pane {
-      .angled(@brand-info; 18%; 160px; 160px; );
+      .angled(@brand-blue; 18%; 160px; 160px;);
       &:before {
         border-left: 120px solid transparent;
         left: -120px
       }
       right:0; top: 0; position: absolute; z-index: 1;
       div {
-        position: absolute; top: 40%; left: 40%;
+        position: absolute; top: 30%; left: 40%;
         font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
@@ -290,7 +290,7 @@ footer {
       }
       right:0; top: 0; position: absolute; z-index: 1;
       div {
-        position: absolute; top: 40%; left: 40%;
+        position: absolute; top: 30%; left: 40%;
         font: 100 1.2em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }
@@ -308,7 +308,7 @@ footer {
       }
       right:0; top: 0; position: absolute; z-index: 1;
       div {
-        position: absolute; top: 40%; left: 40%;
+        position: absolute; top: 30%; left: 40%;
         font: normal 1.5em/1.5em 'Lato', sans-serif; color: #fff;
         text-transform: uppercase;
       }

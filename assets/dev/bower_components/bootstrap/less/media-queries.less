@@ -64,6 +64,23 @@
   .navbar-center {
     li > a {padding-left: 10px; padding-right: 10px;}
   }
+  
+  //////////////////////////////
+  ////// Atrium Page
+  //////////////////////////////
+  #atrium {
+    .option-panels {
+      &:nth-child(1) {margin-top: 60px;}
+      .text {
+        width: 52%; 
+        p {font: 300 16px/1.2em 'Lato',sans-serif;}
+      }
+      .create-pane , .findpro-pane, .channel-pane, .review-pane {
+        &:before {left: -80px; border-left: 80px solid transparent;}
+      }
+    }
+  }
+  
   #profile {
     .cover {height: 320px;}
     .user-nav {
@@ -93,6 +110,52 @@
 ////// SM Screens
 //////////////////////////////
 @media only screen and (max-width: @screen-sm) {
+  
+  //////////////////////////////
+  ////// Atrium Page
+  //////////////////////////////
+  #atrium {
+    .option-panels {
+      margin-bottom: 20px;
+      &:nth-child(1) {margin-top: 30px;}
+      .icon {
+        width: 65px; height: 61px;
+        margin: 32px 0px 15px 20px;
+        background-size: 200%;
+        &.pro {height:53px; background-position: 0 -65px;}
+        &.channels {height:54px; background-position: 0 -118px;}
+        &.review {height: 50px; background-position: 0 -395px;}
+      }
+      .text {
+        h2 {
+          .h5();
+          padding-left: 20px!important;
+          &.orange {
+            .left-slash(10deg; 4px /*left position */; 2px /* top position */; 15px /* height */; 3px /*thickness */; @brand-primary;);
+          }
+          &.blue {
+            .left-slash(10deg; 4px /*left position */; 2px /* top position */; 15px /* height */; 3px /*thickness */; @brand-blue;);
+          }
+          &.green {
+            .left-slash(10deg; 4px /*left position */; 2px /* top position */; 15px /* height */; 3px /*thickness */; @brand-success;);
+          }
+          &.gray {
+            .left-slash(10deg; 4px /*left position */; 2px /* top position */; 15px /* height */; 3px /*thickness */; @gray;);
+          }
+        }
+        .h4();
+        padding-left: 20px!important;
+        width: 62%; margin-right: 20px; padding-left: 0px;
+        p {font: 300 14px/1em 'Lato',sans-serif;}
+      }
+      .create-pane , .findpro-pane, .channel-pane, .review-pane {
+        width: 10%;
+        &:before {left: -30px; border-left: 30px solid transparent;}
+        div {font-size: 14px; left: 2%;}
+      }
+    }
+  }
+  
   
   //////////////////////////////
   ////// Create Profile Pro

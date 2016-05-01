@@ -41,6 +41,13 @@
 .nogutters {padding-left: 3px; padding-right: 3px;}
 .spacer {padding-left: 2em; padding-right: 2em;}
 
+a.soul {
+  margin-left: 15px; color: #FF7C34; text-decoration: none;
+}
+.tagline {
+  margin-left: 15px; padding-bottom: 10px;
+}
+
 .angled-deco-orange {
   margin: -10px -15px;
   .glyphicon {color: white;position: absolute; right: 10px; top: 15px;}
@@ -203,6 +210,50 @@ footer {
   box-shadow: 0 2px 9px rgba(8, 8, 8, 0.2);
 }
 
+//////////////////////////////
+////// Home Page
+//////////////////////////////
+#home-slide {
+  position: relative;
+  .sign-in-msg {
+    text-align: center; color: #fff;
+    position: absolute; left: 10%; width: 80%; top: 40%;
+    z-index: 1; 
+    h2 {
+      font: 100 4.4em/1em 'Lato',sans-serif; text-shadow: 0 3px 20px #000;
+      display:block;
+      &:after {
+        content: '';
+        display: block; background: #fff;
+        height: 2px; max-width: 320px; width: 100%;
+        box-shadow: 0 3px 20px #000;
+        margin: 20px auto 0 auto;
+      }
+    }
+    p {font: normal 1.3em/1em 'Lato',sans-serif; text-shadow: 0 3px 20px #000; margin: 15px 0 15px 0;}
+    a.left.carousel-control , a.right.carousel-control {z-index: 12;}
+  }
+  
+
+  
+  @media only screen and (max-width: @screen-sm) {
+    .sign-in-msg {
+      top: 12%;
+      h2 {
+        font: 100 2em/1em 'Lato',sans-serif;
+        &:after {
+          content: '';
+          display: block; background: #fff;
+          height: 2px; max-width: 300px; width: 100%;
+          box-shadow: 0 3px 20px #000;
+          margin: 10px auto 0 auto;
+        }
+      }
+      p {font: normal 1em/1em 'Lato',sans-serif; }
+    }
+  }
+}
+
 
 //////////////////////////////
 ////// Atrium Page
@@ -215,7 +266,7 @@ footer {
     &:nth-child(1) {margin-top: 100px;}
     .icon , .text , .go {float: left;}
     .icon {
-      background: url('/assets/img/atrium-icons.png') left 0;
+      background: url('theme/v1/atrium-icons.png') left 0;
       width: 126px; height: 118px;
       margin: 15px 15px 15px 40px;
       &.pro {height:109px; background-position: 0 -118px;}
@@ -434,7 +485,7 @@ footer {
 
 
     ul.profile-nav {
-      margin-top: 104px;
+      margin-top: 118px;
       .list-inline();
       > li {
         margin: 0 30px;
@@ -449,6 +500,24 @@ footer {
   } // .user-nav
   .feed-wrap {
     margin-top: 20px;
+    #milestones-panel {
+      a.add-milestone-icon , a.add-milestone-text {display:inline-block; float: left; line-height: 30px;}
+      a.add-milestone-icon {
+        color: #fff;
+        text-decoration: none;
+        .angled(@gray; 44px; 31px; 30px; );
+      }
+      a.add-milestone-text {
+        color: @gray-dark;
+        text-decoration: none;
+        .angled(#fff; 120px; 31px; 30px; );
+        &:hover {
+          color: @gray-base;
+          background: @brand-success;
+          &:before {border-top-color:@brand-success;}
+        }
+      } // a.add-milestone-text
+    }
     .container();
 
     .panel {
@@ -548,6 +617,7 @@ footer {
           line-height: 1em;
           position: relative;
           //border-radius: 5px;
+          &.wide {margin-left: 90px;}
           h2 {
             font: 500 16px/17px 'Lato',sans-serif;
             text-transform: uppercase;
@@ -588,7 +658,7 @@ footer {
   &.enthusiast {
     .user-nav {
       margin-top: -110px;
-      .profile-nav {margin-top: 66px;}
+      .profile-nav {margin-top: 82px;}
     }
     img.pic {border-radius: 50%;}
     .angled-deco-gray {width: 50%;}

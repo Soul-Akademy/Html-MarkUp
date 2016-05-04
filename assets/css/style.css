@@ -7353,6 +7353,13 @@ a.soul {
     padding-right: 18px;
   }
 }
+span.exercise-num {
+  color: #9e9e9e;
+}
+span.exercise-type {
+  color: #208cc0;
+  margin-left: 16px;
+}
 footer {
   display: block;
   margin-top: 60px;
@@ -7445,7 +7452,7 @@ footer {
   float: left;
 }
 #atrium .option-panels .icon {
-  background: url('theme/v1/atrium-icons.png') left 0;
+  background: url('/assets/img/atrium-icons.png') left 0;
   width: 126px;
   height: 118px;
   margin: 15px 15px 15px 40px;
@@ -8082,7 +8089,6 @@ fieldset[disabled] #create-profile a.save.focus {
   top: 0;
 }
 #profile .feed-wrap #milestones-panel a.add-milestone-text {
-  color: #565656;
   text-decoration: none;
   position: relative;
   background-color: #fff;
@@ -8292,6 +8298,9 @@ fieldset[disabled] #create-profile a.save.focus {
 #profile .feed-wrap ul.milestones-wrap.wide {
   margin-top: 60px;
 }
+#profile .feed-wrap ul.milestones-wrap.wide p {
+  line-height: 1.3em;
+}
 #profile .feed-wrap ul.milestones-wrap.wide .circle-marker {
   text-align: center;
   padding-top: 15px;
@@ -8331,7 +8340,7 @@ fieldset[disabled] #create-profile a.save.focus {
   width: 50%;
 }
 #profile.enthusiast .panel-special {
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 #profile.enthusiast .panel-special .panel-heading {
   background: #848484;
@@ -8380,13 +8389,6 @@ fieldset[disabled] #create-profile a.save.focus {
 #profile.enthusiast .panel-special .panel-body .video-wrap .title {
   margin-top: 10px;
   margin-bottom: 6px;
-}
-#profile.enthusiast .panel-special .panel-body .video-wrap span.exercise-num {
-  color: #9e9e9e;
-}
-#profile.enthusiast .panel-special .panel-body .video-wrap span.exercise-type {
-  color: #208cc0;
-  margin-left: 16px;
 }
 #profile.enthusiast .buddy img.img-circle {
   float: left !important;

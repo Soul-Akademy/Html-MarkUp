@@ -207,6 +207,9 @@ a.soul {
 
 ///// * FORM Elements END * ////////
 
+span.exercise-num {color: @gray-light;}
+span.exercise-type {color: @brand-info; margin-left: 16px;}
+
 footer {
   display:block; margin-top: 60px;
 }
@@ -283,7 +286,7 @@ footer {
     &:nth-child(1) {margin-top: 100px;}
     .icon , .text , .go {float: left;}
     .icon {
-      background: url('theme/v1/atrium-icons.png') left 0;
+      background: url('/assets/img/atrium-icons.png') left 0;
       width: 126px; height: 118px;
       margin: 15px 15px 15px 40px;
       &.pro {height:109px; background-position: 0 -118px;}
@@ -525,7 +528,7 @@ footer {
         .angled(@gray; 44px; 31px; 30px; );
       }
       a.add-milestone-text {
-        color: @gray-dark;
+        // color: @gray-dark;
         text-decoration: none;
         .angled(#fff; 120px; 31px; 30px; );
         &:hover {
@@ -671,6 +674,7 @@ footer {
       /// MILESSTONE PAGE 
       &.wide {
         margin-top: 60px;
+        p {line-height: 1.3em;}
         .circle-marker {
           text-align: center;
           padding-top: 15px;
@@ -710,7 +714,7 @@ footer {
     .angled-deco-gray {width: 50%;}
     
     .panel-special {
-      padding-bottom: 80px;
+      padding-bottom: 30px;
       .panel-heading {
         background: @gray;
         &:after {
@@ -738,8 +742,7 @@ footer {
             }
           }
           .title {margin-top: 10px; margin-bottom: 6px;}
-          span.exercise-num {color: @gray-light;}
-          span.exercise-type {color: @brand-info; margin-left: 16px;}
+          
         } // .video-wrap
       } // .panel-body
     } // .panel-special

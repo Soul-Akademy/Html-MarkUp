@@ -205,8 +205,58 @@
                         <br>26</br>
                       </div>
                       <div class='milestone'>
-                        <h2>Apr 24</h2>
-                        <p>blah blah</p>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+                        <span class="exercise-num">10 Reps</span>
+                        <span class="exercise-type">Rep <span class="icon-reps"></span></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class='circle-marker'>
+                        Apr
+                        <br>25</br>
+                      </div>
+                      <div class='milestone'>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+                        <span class="exercise-num">10 Reps</span>
+                        <span class="exercise-type">Rep <span class="icon-reps"></span></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class='circle-marker'>
+                        Apr
+                        <br>24</br>
+                      </div>
+                      <div class='milestone'>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+                        <span class="exercise-num">10 Reps</span>
+                        <span class="exercise-type">Rep <span class="icon-reps"></span></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class='circle-marker'>
+                        Apr
+                        <br>24</br>
+                      </div>
+                      <div class='milestone'>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+                        <span class="exercise-num">10 Reps</span>
+                        <span class="exercise-type">Rep <span class="icon-reps"></span></span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class='circle-marker'>
+                        Apr
+                        <br>24</br>
+                      </div>
+                      <div class='milestone'>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis, at posuere turpis adipiscing. Quisque sit amet dui dui.</p>
+                        <span class="exercise-num">10 Reps</span>
+                        <span class="exercise-type">Rep <span class="icon-reps"></span></span>
                       </div>
                     </li>
                   </ul>

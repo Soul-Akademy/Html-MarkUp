@@ -7008,9 +7008,8 @@ button.close {
 }
 a.soul {
   margin-left: 15px;
-  text-decoration: none;
-  font: bold 30px/42px AristotlePunk, Impact, "Arial Black", sans-serif;
   color: #FF7C34;
+  text-decoration: none;
 }
 .tagline {
   margin-left: 15px;
@@ -7432,6 +7431,10 @@ footer {
   overflow: hidden;
   margin: 15px 0 70px 0;
 }
+#atrium .option-panels a.atrium-go {
+  color: #fff;
+  text-decoration: none;
+}
 #atrium .option-panels:nth-child(1) {
   margin-top: 100px;
 }
@@ -7441,7 +7444,7 @@ footer {
   float: left;
 }
 #atrium .option-panels .icon {
-  background: url('/assets/img/atrium-icons.png') left 0;
+  background: url('theme/v1/atrium-icons.png') left 0;
   width: 126px;
   height: 118px;
   margin: 15px 15px 15px 40px;
@@ -7664,7 +7667,7 @@ footer {
   position: absolute;
   top: 30%;
   left: 40%;
-  font: 100 1.2em/1.5em 'Lato', sans-serif;
+  font: normal 1.5em/1.5em 'Lato', sans-serif;
   color: #fff;
   text-transform: uppercase;
 }
@@ -8284,6 +8287,35 @@ fieldset[disabled] #create-profile a.save.focus {
 }
 #profile .feed-wrap ul.milestones-wrap > li .circle-marker.active {
   box-shadow: 0 0 0 6px #8de63c;
+}
+#profile .feed-wrap ul.milestones-wrap.wide {
+  margin-top: 60px;
+}
+#profile .feed-wrap ul.milestones-wrap.wide .circle-marker {
+  text-align: center;
+  padding-top: 15px;
+  width: 75px;
+  height: 75px;
+  left: 4%;
+  top: 0;
+  margin: 0 0 0 -8px;
+}
+#profile .feed-wrap ul.milestones-wrap.wide .circle-marker:before {
+  left: 8.5%;
+}
+@media only screen and (max-width: 820px) {
+  #profile .feed-wrap ul.milestones-wrap.wide .circle-marker:before {
+    left: 16%;
+  }
+}
+#profile .feed-wrap ul.milestones-wrap.wide li .milestone {
+  margin-bottom: 65px;
+  margin-left: 125px;
+}
+@media only screen and (max-width: 820px) {
+  #profile .feed-wrap ul.milestones-wrap.wide li .milestone {
+    margin-left: 105px;
+  }
 }
 #profile.enthusiast .user-nav {
   margin-top: -110px;

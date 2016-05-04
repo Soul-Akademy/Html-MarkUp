@@ -1,4 +1,13 @@
-<div style="position: fixed; left: 10px; top: 400px; padding: 20px; background: rgba(0,0,0,.7); z-index: 100;">
+<style media="screen">
+  .pageViews {
+    position: fixed; left: 10px; top: 400px; padding: 20px; background: rgba(0,0,0,.7); z-index: 100;
+  }
+  @media only screen and (max-width:820px) {
+    .pageViews {display: none;}
+  }
+</style>
+
+<div class="pageViews">
   <?php
   define('MYDIR','./');
 

@@ -6954,6 +6954,8 @@ button.close {
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.icon-calendar:before,
+.icon-camera:before,
 .icon-certificate:before,
 .icon-connection:before,
 .icon-email:before,
@@ -6978,6 +6980,8 @@ button.close {
   font-smoothing: antialiased;
 }
 
+.icon-calendar:before { content: "\f10d"; }
+.icon-camera:before { content: "\f10c"; }
 .icon-certificate:before { content: "\f104"; }
 .icon-connection:before { content: "\f10a"; }
 .icon-email:before { content: "\f105"; }
@@ -7966,7 +7970,36 @@ fieldset[disabled] #create-profile a.save.focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+}
+#profile .user-nav .acct-type-label {
+  text-transform: uppercase;
+  display: inline;
+  float: right;
+  background: #2EC0FE;
+  padding: 5px 10px;
+  position: relative;
+  background-color: #2EC0FE;
+  width: 126px;
+  height: 31px;
+  padding-left: 10px;
+}
+#profile .user-nav .acct-type-label:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 30px solid #2EC0FE;
+  border-left: 20px solid transparent;
+  left: -20px;
+  top: 0;
+}
+@media only screen and (max-width: 820px) {
+  #profile .user-nav .acct-type-label {
+    position: absolute;
+    bottom: -1px;
+    right: 23%;
+  }
 }
 #profile .user-nav .name {
   font: 300 32px/38px 'Lato', sans-serif;

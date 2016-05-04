@@ -477,7 +477,16 @@ footer {
     overflow: hidden; color: white;
     img.pic {
       .img-thumbnail(); .img-responsive(); .center-block();
-      margin-bottom: 20px;
+    }
+    .acct-type-label {
+      text-transform: uppercase;
+      display: inline; float:right;
+      background: @brand-blue; padding: 5px 10px;
+      .angled(@brand-blue; 126px; 31px; 30px;);
+      @media only screen and (max-width: @screen-sm) {
+        position: absolute; bottom: -1px; right: 23%;  
+      }
+      
     }
     .name {
       font: 300 32px/38px 'Lato',sans-serif;

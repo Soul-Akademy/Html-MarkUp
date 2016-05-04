@@ -281,7 +281,7 @@
         <h4 class="modal-title">Add Milestone</h4>
       </div>
       <div class="modal-body">
-        Pick a Date:
+        Pick a Date: <span class="glyphicon icon-calendar"></span>
         <hr>
 
         <form class="form-horizontal" role="form">

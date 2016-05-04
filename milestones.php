@@ -195,8 +195,8 @@
                 </div>
                 <div class='panel-body widget-content'>
                   <div class='pull-right'>
-                    <a class='add-milestone-icon' href='#'>+</a>
-                    <a class='add-milestone-text' href='#'>Add Milestone</a>
+                    <a type="button" class='add-milestone-icon' href='#' data-toggle="modal" data-target="#addMilestone">+</a>
+                    <a type="button" class='add-milestone-text' href='#' data-toggle="modal" data-target="#addMilestone">Add Milestone</a>
                   </div>
                   <ul class='milestones-wrap wide'>
                     <li>
@@ -271,5 +271,35 @@
         </div>
       </div>
     </div>
+    
+<!-- Modal -->
+<div class="modal fade" id="addMilestone" tabindex="-1" role="dialog" aria-labelledby="addMilestone">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add Milestone</h4>
+      </div>
+      <div class="modal-body">
+        Pick a Date:
+        <hr>
+
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <textarea class="form-control" rows="4" placeholder="Please add a milestone"/></textarea>
+            </div>
+           </div>
+         </form>
+        
+      </div>
+      <div class="modal-footer">
+        <a href="#"><span class="glyphicon icon-send"></span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
   </body>
 </html>

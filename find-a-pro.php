@@ -7,7 +7,7 @@
       <span>Konrad Gungor</span><br>
       Personal Trainer, Yoga, Track<br>
       Miami, FL
-      <div class="rating">
+      <div class="star-ratings">
         <span class="star filled">☆</span>
         <span class="star filled">☆</span>
         <span class="star">☆</span>

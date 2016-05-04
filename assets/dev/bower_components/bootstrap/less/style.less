@@ -43,9 +43,12 @@
 
 a.soul {
   margin-left: 15px; color: #FF7C34; text-decoration: none;
+  font: bold 30px/42px AristotlePunk, Impact, "Arial Black", sans-serif;
+  color: #FF7C34;
 }
 .tagline {
   margin-left: 15px; padding-bottom: 10px;
+  
 }
 
 .angled-deco-orange {
@@ -127,8 +130,21 @@ a.soul {
   
   .search {
     // margin: -20px -40px 0 -40px;
-    padding: 20px 20px 20px 0px; background: @brand-blue;
+    padding: 20px 20px 20px 0px; 
     .angled(@brand-blue , 100% , auto , 130px);
+    
+    &.graysearch {
+      background: @gray-light;
+      .angled(@gray-light , 100% , auto , 130px);
+      &:before {
+        border-left: 60px solid transparent;
+        left: -60px;
+      }
+      h1 {
+        .left-slash(22deg; -8px /*left position */; 18px /* top position */; 30px /* height */; 3px /*thickness */; #fff;);
+      }
+    }
+    
     &:before {
       border-left: 60px solid transparent;
       left: -60px;
@@ -266,7 +282,7 @@ footer {
     &:nth-child(1) {margin-top: 100px;}
     .icon , .text , .go {float: left;}
     .icon {
-      background: url('theme/v1/atrium-icons.png') left 0;
+      background: url('/assets/img/atrium-icons.png') left 0;
       width: 126px; height: 118px;
       margin: 15px 15px 15px 40px;
       &.pro {height:109px; background-position: 0 -118px;}

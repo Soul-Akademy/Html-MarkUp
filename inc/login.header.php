@@ -19,9 +19,10 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="/">
-         <img src="/assets/img/soul-akademy-logo.svg" alt="">
-       </a>
+       <a class="soul" href="/">soul Akademy</a>
+        <div class='tagline' style='font-size: 12px; color: #fff; font-weight: 100;'>
+          A social network unifying the fitness &amp; wellness  culture
+        </div>
      </div>
      <div id="navbar" class="navbar-collapse collapse">
        <ul class="nav navbar-nav navbar-right">

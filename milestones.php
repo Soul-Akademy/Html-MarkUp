@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
   </head>
   <body class='login'>
+    <?php include("inc/pages-directory.php"); ?>
     <nav class='navbar navbar-inverse'>
       <div class='container'>
         <div class='navbar-header'>
@@ -153,7 +154,7 @@
             <div class='panel-heading'>Advert</div>
             <div class='panel-body ad'>
               <a href='#'>
-                <img alt="" src="/images/profile/ad.jpg" />
+                <img alt="" src="/assets/img/profile/ad.jpg" />
               </a>
             </div>
             <div class='panel-footer'></div>

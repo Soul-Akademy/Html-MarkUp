@@ -1,5 +1,5 @@
 <?php include("inc/header.php"); ?>
-<body>
+ <div class="container theme-showcase" role="main" style="margin-top: 80px;">
    <div class="container">
      <div class="jumbotron">
        <h1>Themestrap Kitchen Sink</h1>
@@ -663,5 +663,4 @@
        </div>
      </div>
    </div>
- </body>
  <?php include("inc/footer.php"); ?>

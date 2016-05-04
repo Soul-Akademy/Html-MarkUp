@@ -8,20 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body> 
-<div style="position: absolute; left: 10px; top: 400px; padding: 20px; background: rgba(0,0,0,.7); z-index: 100;">
-  <?php
-  $dir_open = opendir('.');
-
-  while(false !== ($filename = readdir($dir_open))){
-      if($filename != "." && $filename != ".."){
-          $link = "<a href='./$filename'> $filename </a><br />";
-          echo $link;
-      }
-  }
-
-  closedir($dir_open);
-  ?>
-</div>  
+<?php include("inc/pages-directory.php"); ?>
 <!-- Fixed navbar -->
  <nav class="navbar navbar-inverse">
    <div class="container">
@@ -48,3 +35,4 @@
      </div><!--/.nav-collapse -->
    </div>
  </nav>
+ <div class='brand-gradient bar'></div>

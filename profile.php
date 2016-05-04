@@ -1,6 +1,13 @@
 <?php include("inc/header.php"); ?>
 <div id="profile">
-  <div style="" class="cover"></div>
+  <div style="" class="cover">
+    <div class="container">
+      <a class="change-cover" href="#">
+        <span class="glyphicon icon-addphoto"></span><br>
+        Change Cover
+      </a>
+    </div>
+  </div>
   <div class="brand-gradient bar"></div>
 
   <div class="container user-nav">

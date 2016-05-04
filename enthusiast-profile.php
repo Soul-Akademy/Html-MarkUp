@@ -1,13 +1,23 @@
 <?php include("inc/create.header.php"); ?>
 <div id="profile" class="enthusiast">
-  <div style="" class="cover"></div>
+  <div style="" class="cover">
+    <div class="container">
+      <a class="change-cover" href="#">
+        <span class="glyphicon icon-addphoto"></span><br>
+        Change Cover
+      </a>
+    </div>
+  </div>
   <div class="brand-gradient bar"></div>
 
   <div class="container user-nav">
-    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+    <div class="col-md-3 col-sm-3 col-xs-12">
+      <a class="addphoto" href="#">
+        <span class="glyphicon icon-addphoto"></span>
+      </a>
       <img class="pic" src="/assets/img/profile/profile-pic.jpg" alt="">
     </div>
-    <div class="col-lg-7 col-md-6 col-sm-6 col-xs-6">
+    <div class="col-md-6 col-sm-6 col-xs-6">
       <div class="name">Konrad Gungor</div>
       <div class="location">Miami, FL</div>
     </div>
@@ -19,8 +29,8 @@
     </div>
     <div class="col-md-9 col-sm-7 col-xs-12">
       <ul class="profile-nav">
-        <li><a href="#">Profile</a></li>
-        <li><a class="active" href="#">Video</a></li>
+        <li><a class="active" href="#">Profile</a></li>
+        <li><a href="#">Video</a></li>
         <li><a href="#">Milestones</a></li>
         <li><a href="#">Friends</a></li>
       </ul>

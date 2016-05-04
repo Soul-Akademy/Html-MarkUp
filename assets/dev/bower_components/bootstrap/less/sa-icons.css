@@ -23,6 +23,7 @@
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.icon-addphoto:before,
 .icon-calendar:before,
 .icon-camera:before,
 .icon-certificate:before,
@@ -49,6 +50,7 @@
   font-smoothing: antialiased;
 }
 
+.icon-addphoto:before { content: "\f10e"; }
 .icon-calendar:before { content: "\f10d"; }
 .icon-camera:before { content: "\f10c"; }
 .icon-certificate:before { content: "\f104"; }

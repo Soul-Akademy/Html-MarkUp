@@ -4,10 +4,10 @@
   <div class="brand-gradient bar"></div>
 
   <div class="container user-nav">
-    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+    <div class="col-md-3 col-sm-3 col-xs-12">
       <img class="pic" src="/assets/img/profile/profile-pic.jpg" alt="">
     </div>
-    <div class="col-lg-7 col-md-6 col-sm-6 col-xs-6">
+    <div class="col-md-6 col-sm-6 col-xs-6">
       <div class="name">Konrad Gungor</div>
       <div class="location">Miami, FL</div>
     </div>

@@ -6100,8 +6100,8 @@ button.close {
   filter: alpha(opacity=0);
 }
 .modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .modal-header {
   padding: 15px;
@@ -6120,7 +6120,6 @@ button.close {
 }
 .modal-footer {
   padding: 15px;
-  text-align: right;
   border-top: 1px solid #e5e5e5;
 }
 .modal-footer .btn + .btn {
@@ -8595,13 +8594,14 @@ fieldset[disabled] #create-profile a.save.focus {
   margin-bottom: 20px;
   margin-top: 15px;
 }
-#profile.enthusiast .panel-special .panel-body .video-wrap .video {
+#profile.enthusiast .panel-special .panel-body .video-wrap a.video {
+  display: block;
   width: 100%;
   min-height: 180px;
   background: #ebebeb;
   position: relative;
 }
-#profile.enthusiast .panel-special .panel-body .video-wrap .video .runtime {
+#profile.enthusiast .panel-special .panel-body .video-wrap a.video .runtime {
   color: #fff;
   background: #ff7c34;
   padding: 2px 8px;
@@ -8614,7 +8614,7 @@ fieldset[disabled] #create-profile a.save.focus {
   padding-left: 10px;
   position: absolute;
 }
-#profile.enthusiast .panel-special .panel-body .video-wrap .video .runtime:before {
+#profile.enthusiast .panel-special .panel-body .video-wrap a.video .runtime:before {
   height: 0;
   width: 0;
   content: "";
@@ -8625,7 +8625,7 @@ fieldset[disabled] #create-profile a.save.focus {
   left: -20px;
   top: 0;
 }
-#profile.enthusiast .panel-special .panel-body .video-wrap .video .runtime:before {
+#profile.enthusiast .panel-special .panel-body .video-wrap a.video .runtime:before {
   border-left: 10px solid transparent;
   left: -10px;
 }

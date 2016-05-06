@@ -93,9 +93,9 @@
           $videos =
           '
           <div class="col-lg-4 col-md-6 video-wrap">
-            <div class="video">
+            <a data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s" href="#" class="video">
               <div class="runtime">12:42</div>
-            </div>
+            </a>
             
             <div class="title">Video Title that can Drop down to two lines of text or more</div>
             <span class="exercise-num">10 Reps</span>
@@ -114,9 +114,37 @@
           <?php print $videos; ?>
         </div>
       </div>
+      
+    
     </div>
     
   </div>
   
+</div>
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <img class="img-circle" src="/assets/img/profile/profile-pic.jpg" width="50" height="50" alt="">
+        <p><a href="#">Konrad Gungor</a> udpated his status</p>
+        <span>5 mins ago</span>
+        
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src=""></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <h4>Video Title</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed sapien quam. Sed dapibus est id enim facilisis.</p>
+        <span class="exercise-num">10 Reps</span>
+        <span class="exercise-type">Rep <span class="icon-reps"></span></span>
+      </div>
+    </div>
+  </div>
 </div>
 <?php include("inc/footer.php"); ?>

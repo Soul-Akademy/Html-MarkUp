@@ -10,25 +10,6 @@
     });
     
   });
-  
-  // $(document).ready(function(){
-  //       $(".go").click(function(){
-  //         
-  //         if ($(this).hasClass("expanded")) {
-  //           $(this).removeClass('expanded');
-  //           $(this).empty('p');
-  //           $('#go').append( "<h2>Go</h2>" );
-  //         }
-  //         else {
-  //           $(this).toggleClass("expanded");
-  //           $(this).append( "<p>text swapped</p>" );
-  //           $('.go > h2').empty();
-  //           console.log('works');
-  //         };
-  //         
-  //     });
-  // })
-  // 
 </script>
 
 </body>

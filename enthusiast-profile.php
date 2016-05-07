@@ -123,7 +123,8 @@
 </div>
 
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="vertical-alignment-helper">
+  <div class="modal-dialog vertical-align-center">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -145,6 +146,7 @@
         <span class="exercise-type">Rep <span class="icon-reps"></span></span>
       </div>
     </div>
+  </div>
   </div>
 </div>
 <?php include("inc/footer.php"); ?>

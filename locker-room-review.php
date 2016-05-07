@@ -80,6 +80,40 @@
     </div>
     
     <div class="col-md-8 col-sm-6 my-reputation">
+      
+      
+      <div class="panel panel-special">
+        <div class="panel-heading">
+          Leave a Review
+          <div class="angled-deco-blue"><span class="glyphicon glyphicon-triangle-top"></span></div>
+        </div>
+        <div class="panel-body">
+          <p>Rate from 1-5 </p>
+          
+          <div class="form-group">
+            <span class="star-ratings-input">
+              <input type="radio" name="rating" value="1"><i></i>
+              <input type="radio" name="rating" value="2"><i></i>
+              <input type="radio" name="rating" value="3"><i></i>
+              <input type="radio" name="rating" value="4"><i></i>
+              <input type="radio" name="rating" value="5"><i></i>
+            </span>
+            
+            <div class="input-group">
+              <input class="input-field form-control" placeholder="Write a Comment">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#specials-form"><i class="glyphicon icon-send"></i></button>
+              </span>
+            </div>
+            
+          </div>
+          
+          
+        </div>
+
+      </div>
+      
+      
       <div class="panel panel-special">
         <div class="panel-heading">
           My Reputation

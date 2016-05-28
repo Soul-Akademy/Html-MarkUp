@@ -315,7 +315,10 @@
            </div>
            <div class="panel-body">
            <div class="input-group">
-             <span class="input-group-btn">                <button class="btn btn-default" type="button">Go!</button>              </span><input type="text" class="form-control" placeholder="Username">
+            <input type="text" class="form-control" placeholder="Username">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
            </div><br>
            <div class="input-group">
              <input type="text" class="form-control input-large">

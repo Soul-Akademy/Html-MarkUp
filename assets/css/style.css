@@ -4417,7 +4417,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding-top: 5px;
+  padding-top: 20px;
   font-size: 18px;
   line-height: 20px;
   height: 70px;
@@ -6448,6 +6448,7 @@ button.close {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   line-height: 1;
+  margin: 0 auto;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
@@ -7022,6 +7023,9 @@ button.close {
 .icon-settings:before { content: "\f101"; }
 .icon-tv:before { content: "\f109"; }
 
+textarea {
+  resize: vertical;
+}
 .navbar li a span.icon-settings {
   color: #ff7c34;
 }

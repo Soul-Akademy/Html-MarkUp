@@ -75,7 +75,7 @@
     <div class="col-md-8 col-sm-6">
       <div class="panel panel-special">
         <div class="panel-heading">
-          Konrad's Friends
+          Konrad's Friends &nbsp; <span class="badge primary">150</span>
           <div class="angled-deco-gray"><span class="glyphicon glyphicon-triangle-top"></span></div>
         </div>
         <div class="panel-body">

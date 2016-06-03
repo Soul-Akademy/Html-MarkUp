@@ -69,10 +69,12 @@
        <ul class='nav navbar-nav navbar-right'>
          <li class='dropdown'>
            <a aria-expanded='false' aria-haspopup='true' class='dropdown-toggle' data-toggle='dropdown' href='#' role='button'>
-             Victor Bustos
+             <span class="glyphicon glyphicon-user"></span>
              <span class='caret'></span>
            </a>
            <ul class='dropdown-menu'>
+             <li><a href="#">Victor Bustos</a></li>
+             <li class='divider' role='separator'></li>
              <li>
                <a href="/atrium/create_profile_enthusiast">Edit Profile
                </a>

@@ -9071,6 +9071,10 @@ body.login #login .not-member {
 #private-messaging .inbox span.snippet {
   color: #848484;
 }
+#private-messaging .msgs .panel-body {
+  max-height: 550px;
+  overflow-y: scroll;
+}
 #private-messaging .msgs .message {
   position: relative;
   margin-bottom: 20px;
